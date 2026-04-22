@@ -1,265 +1,90 @@
-<div class="page" #scrollRoot (scroll)="onScroll($event)">
-  <a class="skip-link" href="#reel" (click)="$event.preventDefault(); scrollToSection('reel')">
-    Skip to work
-  </a>
-
-  <div class="sr-only" aria-live="polite" aria-atomic="true">{{ announce() }}</div>
-
-  <!-- ============ SCRAPBOOK HERO ============ -->
-  <section id="hero" class="stage" aria-label="Introduction">
-    <div class="stage__grain" aria-hidden="true"></div>
-
-    <!-- Top-left: stacked store links + CTA pills -->
-    <div class="corner corner--tl">
-      <ul class="corner__links">
-        <li><a href="#reel" (click)="$event.preventDefault(); scrollToSection('reel')">The Book</a></li>
-        <li><a href="#about" (click)="$event.preventDefault(); scrollToSection('about')">Measurements</a></li>
-      </ul>
-      <div class="cta">
-        <button
-          type="button"
-          class="cta__pill cta__pill--filled"
-          (click)="scrollToSection('reel')"
-        >
-          <span class="cta__dot" aria-hidden="true"></span>
-          <span>New Book<br/>Out Now</span>
-        </button>
-        <button
-          type="button"
-          class="cta__pill cta__pill--outline"
-          (click)="toggleIndex()"
-          [attr.aria-expanded]="view() === 'index'"
-          aria-controls="index-overlay"
-        >
-          Index
-        </button>
-      </div>
-    </div>
-
-    <!-- Top-center: wordmark + cutout photo -->
-    <div class="corner corner--tc">
-      <span class="wordmark">JORK</span>
-      <div class="cutout" aria-hidden="true">
-        <img src="/gallery/interior.jpeg" alt="" loading="eager" decoding="async">
-      </div>
-    </div>
-
-    <!-- Top-right: watch link -->
-    <div class="corner corner--tr">
-      <a class="side-link" href="#reel" (click)="$event.preventDefault(); scrollToSection('reel')">
-        Watch
-      </a>
-      <span class="pulse" aria-hidden="true"></span>
-    </div>
-
-    <!-- Center: scattered photo collage + handwritten title -->
-    <div class="collage" aria-hidden="true">
-      <figure class="card card--1">
-        <img src="/gallery/closeup.jpeg" alt="" loading="eager" decoding="async">
-      </figure>
-
-      <figure class="card card--2 card--pink">
-        <img src="/gallery/exuberance.jpeg" alt="" loading="eager" decoding="async">
-      </figure>
-
-      <figure class="card card--3">
-        <img src="/gallery/interior.jpeg" alt="" loading="eager" decoding="async">
-      </figure>
-
-      <figure class="card card--4 card--teal">
-        <img src="/gallery/transit.jpeg" alt="" loading="eager" decoding="async">
-      </figure>
-
-      <figure class="card card--5">
-        <img src="/gallery/jersey.jpeg" alt="" loading="eager" decoding="async">
-      </figure>
-    </div>
-
-    <div class="title">
-      <h1 class="title__script">
-        <span>Something to</span>
-        <span>wear, something</span>
-        <span>to hold</span>
-      </h1>
-      <p class="title__kicker">Out Now</p>
-    </div>
-
-    <!-- Bottom-left: listen / contact -->
-    <div class="corner corner--bl">
-      <a class="side-link" [href]="'mailto:' + profile.email">Contact</a>
-    </div>
-
-    <!-- Bottom-center: scroll indicator -->
-    <button
-      type="button"
-      class="corner corner--bc scroll-cue"
-      (click)="scrollToSection('reel')"
-      aria-label="Scroll for more"
+<header class="nav">
+  <a class="nav__mark" href="#work" aria-label="Home">{{ profile.initials }}</a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#work">Work</a>
+    <button type="button" class="nav__button" (click)="openViewer(0)">
+      Gallery
+    </button>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a
+      class="nav__ig"
+      [href]="profile.instagram"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram"
     >
-      <span>Scroll for more</span>
-      <svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true">
-        <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+        <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <circle cx="17.2" cy="6.8" r="1" fill="currentColor"/>
+      </svg>
+    </a>
+  </nav>
+</header>
+
+<main>
+  <section id="work" class="gallery" aria-label="Work">
+    @for (p of featuredPhotos; track p.file) {
+      <figure
+        class="photo"
+        [style.top.%]="p.top"
+        [style.left.%]="p.left"
+        [style.width.%]="p.width"
+      >
+        <button
+          type="button"
+          class="photo__button"
+          [attr.aria-label]="'Open ' + p.alt + ' in gallery'"
+          (click)="openViewer(indexOf(p))"
+        >
+          <img [src]="'/gallery/' + p.file" [alt]="p.alt" loading="lazy" decoding="async" />
+        </button>
+      </figure>
+    }
+  </section>
+
+  <div class="gallery__cta">
+    <button type="button" class="gallery__cta-button" (click)="openViewer(0)">
+      View all photos
+      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+        <path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </button>
+  </div>
 
-    <!-- Bottom-right: social row -->
-    <nav class="corner corner--br socials" aria-label="Social">
-      <a [href]="'mailto:' + profile.email" aria-label="Email">
-        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M3 6h18v12H3z M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
-      </a>
-      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
-          <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
-          <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.4"/>
-          <circle cx="17.2" cy="6.8" r="1" fill="currentColor"/>
-        </svg>
-      </a>
-      <a href="https://tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M14 4v9.5a3 3 0 1 1-3-3 M14 4c.5 2.5 2 4 5 4.2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 5l7 9-7 6h3l5.5-4.7L17 20h4l-7.4-9.4L20 5h-3l-4.7 4L9 5H4z" fill="currentColor"/></svg>
-      </a>
-    </nav>
-  </section>
-
-  <!-- ============ THE REEL ============ -->
-  <main id="reel" class="reel" aria-label="Editorial reel">
-    <header class="reel__header">
-      <span class="reel__eyebrow">The Book · 2026</span>
-      <h2 class="reel__heading">Looks</h2>
-      <span class="reel__counter">{{ counter() }}</span>
-    </header>
-
-    @for (look of looks; track trackById($index, look); let i = $index) {
-      <section
-        #reelSlide
-        class="reel__slide"
-        [class.is-active]="activeIndex() === i"
-        [attr.data-idx]="i"
-        [attr.aria-label]="look.alt || look.title"
-      >
-        <figure class="reel__figure">
-          <div class="reel__frame">
-            <img
-              class="reel__img"
-              [src]="src(look)"
-              [alt]="look.alt || look.title"
-              [width]="look.width"
-              [height]="look.height"
-              sizes="(max-width: 1200px) 90vw, 1100px"
-              [loading]="i === 0 ? 'eager' : 'lazy'"
-              [attr.fetchpriority]="i === 0 ? 'high' : 'low'"
-              decoding="async"
-              (load)="onImageLoad($event)"
-            />
-          </div>
-          <figcaption class="reel__caption">
-            <span class="reel__num">{{ (i + 1).toString().padStart(2, '0') }}</span>
-            <span class="reel__title">{{ look.title }}</span>
-          </figcaption>
-        </figure>
-      </section>
-    }
-  </main>
-
-  <!-- ============ ABOUT ============ -->
-  <section id="about" class="about" aria-label="About">
-    <div class="about__inner">
-      <p class="about__eyebrow">Measurements</p>
-      <h2 class="about__heading">The figure.</h2>
-      <dl class="stats">
-        @for (m of profile.measurements; track m.label) {
-          <div class="stats__row">
-            <dt class="stats__label">{{ m.label }}</dt>
-            <dd class="stats__value">{{ m.value }}</dd>
-          </div>
-        }
-      </dl>
-
-      <p class="about__bio">{{ profile.bio }}</p>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT ============ -->
-  <section id="contact" class="contact" aria-label="Contact">
-    <div class="contact__inner">
-      <p class="contact__eyebrow">Representation · Booking</p>
-      <h2 class="contact__heading">Let's work <em>together.</em></h2>
-      <ul class="contact__list">
-        <li>
-          <a class="contact__link" [href]="'mailto:' + profile.email">
-            {{ profile.email }}
-          </a>
-        </li>
-        <li>
-          <a
-            class="contact__link"
-            [href]="profile.instagram"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instagram
-          </a>
-        </li>
-        <li class="contact__muted">{{ profile.location }}</li>
-      </ul>
-      <p class="contact__foot">
-        © {{ profile.name }} — All images reserved.
-      </p>
-    </div>
-  </section>
-
-  <!-- ============ INDEX OVERLAY ============ -->
-  @if (view() === 'index') {
-    <div
-      id="index-overlay"
-      class="index"
-      role="dialog"
-      aria-modal="true"
-      aria-label="Editorial index"
-      (click)="closeIndex()"
-    >
-      <div class="index__inner" (click)="$event.stopPropagation()">
-        <header class="index__head">
-          <span class="index__label">Index</span>
-          <button
-            type="button"
-            class="index__close"
-            (click)="closeIndex()"
-            aria-label="Close index"
-          >
-            <span>Close</span>
-            <kbd class="kbd" aria-hidden="true">Esc</kbd>
-          </button>
-        </header>
-        <div class="index__grid">
-          @for (look of looks; track trackById($index, look); let i = $index) {
-            <button
-              type="button"
-              class="grid__tile"
-              [class.is-active]="activeIndex() === i"
-              (click)="jumpTo(i)"
-              [attr.aria-label]="'Jump to ' + look.title"
-            >
-              <span class="grid__frame">
-                <img
-                  class="grid__img"
-                  [src]="src(look)"
-                  [alt]="look.alt || look.title"
-                  loading="lazy"
-                  decoding="async"
-                  (load)="onImageLoad($event)"
-                />
-              </span>
-              <span class="grid__meta">
-                <span class="grid__num">{{ (i + 1).toString().padStart(2, '0') }}</span>
-                <span class="grid__title">{{ look.title }}</span>
-              </span>
-            </button>
-          }
+  <section id="about" class="section" aria-label="About">
+    <h2 class="section__heading">About</h2>
+    <p class="section__body">
+      {{ profile.name }} is a model based in New York. Available for editorial,
+      runway, and campaign work.
+    </p>
+    <dl class="measurements">
+      @for (m of profile.measurements; track m.label) {
+        <div class="measurements__row">
+          <dt>{{ m.label }}</dt>
+          <dd>{{ m.value }}</dd>
         </div>
-      </div>
-    </div>
-  }
-</div>
+      }
+    </dl>
+  </section>
+
+  <section id="contact" class="section" aria-label="Contact">
+    <h2 class="section__heading">Contact</h2>
+    <ul class="section__list">
+      <li><a [href]="'mailto:' + profile.email">{{ profile.email }}</a></li>
+      <li>
+        <a [href]="profile.instagram" target="_blank" rel="noopener noreferrer">
+          Instagram
+        </a>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<app-gallery-viewer
+  [photos]="profile.photos"
+  [open]="viewerOpen()"
+  [startIndex]="viewerStart()"
+  (closed)="closeViewer()"
+/>
