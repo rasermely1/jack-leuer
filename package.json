@@ -1,0 +1,9 @@
+{
+  "name": "jork-dot-com",
+  "private": true,
+  "scripts": {
+    "dev": "npm start --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix client"
+  }
+}
