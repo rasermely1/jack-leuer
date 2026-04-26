@@ -1,16 +1,45 @@
 :host {
   display: block;
   color: var(--ink);
-  /* Background intentionally transparent so the water-trail canvas
-     (z-index: 0 behind this component at z-index: 1) remains visible.
-     Page-level paper color is set on <body> in styles.scss. */
   background: transparent;
   position: relative;
   z-index: 1;
 }
 
 /* =========================================================
-   NAV — wordmark left, links right
+   BACKDROP — the hero photo persists behind the entire page,
+   anchored to the viewport so it cinematically reveals as the
+   visitor scrolls past the content sections layered above.
+   ========================================================= */
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-position: center 28%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #0c0c0c;
+  will-change: transform;
+}
+
+.backdrop__veil {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(10, 10, 10, 0.20) 0%,
+      rgba(10, 10, 10, 0.55) 60%,
+      rgba(10, 10, 10, 0.85) 100%
+    );
+  pointer-events: none;
+}
+
+/* =========================================================
+   NAV — wordmark left, links right; sits on the hero, so it
+   borrows light text until content takes over.
    ========================================================= */
 
 .nav {
@@ -22,9 +51,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.75rem clamp(1.25rem, 3vw, 2.5rem);
+  padding: 1.5rem clamp(1.25rem, 3vw, 2.5rem);
   background: transparent;
   pointer-events: none;
+  color: #f5f3ee;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
 }
 
 .nav > * { pointer-events: auto; }
@@ -32,8 +63,8 @@
 .nav__mark {
   font-family: var(--serif);
   font-size: 1.5rem;
-  letter-spacing: 0.02em;
-  color: var(--ink);
+  letter-spacing: 0.04em;
+  color: inherit;
   text-decoration: none;
   line-height: 1;
 }
@@ -42,17 +73,20 @@
   display: flex;
   align-items: center;
   gap: clamp(1.25rem, 2.5vw, 2.25rem);
+  color: inherit;
 }
 
-.nav__links a {
+.nav__links a,
+.nav__button {
   font-family: var(--serif);
   font-size: 0.95rem;
-  color: var(--ink);
+  color: inherit;
   text-decoration: none;
   transition: opacity 180ms ease;
 }
 
-.nav__links a:hover { opacity: 0.55; }
+.nav__links a:hover,
+.nav__button:hover { opacity: 0.65; }
 
 .nav__button {
   appearance: none;
@@ -60,18 +94,13 @@
   border: 0;
   padding: 0;
   margin: 0;
-  font-family: var(--serif);
-  font-size: 0.95rem;
-  color: var(--ink);
   cursor: pointer;
   line-height: inherit;
-  transition: opacity 180ms ease;
 }
 
-.nav__button:hover { opacity: 0.55; }
-
-.nav__button:focus-visible {
-  outline: 1px solid var(--ink);
+.nav__button:focus-visible,
+.nav__links a:focus-visible {
+  outline: 1px solid currentColor;
   outline-offset: 4px;
   border-radius: 2px;
 }
@@ -80,25 +109,205 @@
   display: inline-grid;
   place-items: center;
   line-height: 0;
+  color: inherit;
 }
 
 /* =========================================================
-   GALLERY — scattered photos on a clean canvas
+   HERO — first viewport. Just type over the photo.
    ========================================================= */
 
-.gallery {
+.hero {
   position: relative;
-  width: 100%;
-  /* Aspect ratio roughly matches the reference layout so percentage
-     coordinates feel consistent across viewports. */
-  aspect-ratio: 4 / 3;
-  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 clamp(1.5rem, 6vw, 5rem);
+  color: #f5f3ee;
 }
 
-.photo {
-  position: absolute;
+.hero__inner {
+  max-width: 38rem;
+  margin-bottom: 8vh;
+}
+
+.hero__eyebrow {
+  margin: 0 0 1.25rem;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: rgba(245, 243, 238, 0.7);
+}
+
+.hero__name {
   margin: 0;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(3.25rem, 10vw, 7.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
+}
+
+.hero__tagline {
+  margin: 1.25rem 0 0;
+  max-width: 28rem;
+  font-family: var(--serif);
+  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+  line-height: 1.45;
+  color: rgba(245, 243, 238, 0.88);
+}
+
+.hero__cta {
+  margin-top: 2.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem 2rem;
+}
+
+.hero__cta-button {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.6rem;
+  background: rgba(245, 243, 238, 0.96);
+  color: #1a1a1a;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: var(--serif);
+  font-size: 0.98rem;
+  letter-spacing: 0.04em;
+  transition:
+    transform 220ms ease,
+    background-color 220ms ease;
+}
+
+.hero__cta-button:hover {
+  transform: translateY(-1px);
+  background: #ffffff;
+}
+
+.hero__cta-button svg { transition: transform 220ms ease; }
+.hero__cta-button:hover svg { transform: translateX(3px); }
+
+.hero__cta-link {
+  font-family: var(--serif);
+  font-size: 0.98rem;
+  letter-spacing: 0.04em;
+  color: rgba(245, 243, 238, 0.85);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(245, 243, 238, 0.35);
+  padding-bottom: 2px;
+  transition: opacity 200ms ease, border-color 200ms ease;
+}
+
+.hero__cta-link:hover {
+  opacity: 0.85;
+  border-bottom-color: rgba(245, 243, 238, 0.7);
+}
+
+.hero__scroll {
+  position: absolute;
+  bottom: 2.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(245, 243, 238, 0.78);
+  font-family: var(--serif);
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity 200ms ease;
+}
+
+.hero__scroll:hover { opacity: 1; }
+
+.hero__scroll svg { animation: hero-bob 1800ms ease-in-out infinite; }
+
+@keyframes hero-bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(3px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__scroll svg { animation: none; }
+}
+
+/* =========================================================
+   WORK — category sections sit on translucent paper so the
+   backdrop ghosts behind them. Each series is its own grid.
+   ========================================================= */
+
+.work {
+  position: relative;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.25rem, 4vw, 2.5rem) clamp(2rem, 4vw, 3rem);
+  max-width: 84rem;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.series {
+  background: rgba(252, 252, 252, 0.94);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  padding: clamp(1.75rem, 3.5vw, 3rem) clamp(1.25rem, 3vw, 2.25rem);
+  backdrop-filter: blur(10px) saturate(1.05);
+  -webkit-backdrop-filter: blur(10px) saturate(1.05);
+  box-shadow: 0 30px 60px -40px rgba(0, 0, 0, 0.45);
+}
+
+.series__header {
+  max-width: 44rem;
+  margin: 0 auto clamp(1.5rem, 3vw, 2.25rem);
+  text-align: center;
+}
+
+.series__count {
+  margin: 0 0 0.6rem;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.series__heading {
+  margin: 0 0 0.6rem;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  letter-spacing: 0.01em;
+  color: var(--ink);
+}
+
+.series__blurb {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+.series__grid {
+  columns: 3;
+  column-gap: clamp(8px, 0.8vw, 14px);
+}
+
+.series__grid--two { columns: 2; }
+
+.photo {
+  display: block;
+  margin: 0 0 clamp(8px, 0.8vw, 14px);
   line-height: 0;
+  break-inside: avoid;
 }
 
 .photo__button {
@@ -111,10 +320,11 @@
   width: 100%;
   cursor: zoom-in;
   line-height: 0;
+  overflow: hidden;
   transition: transform 420ms cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
-.photo__button:hover { transform: scale(1.015); }
+.photo__button:hover { transform: scale(1.012); }
 
 .photo__button:focus-visible {
   outline: 1px solid var(--ink);
@@ -129,64 +339,70 @@
   transition: filter 280ms ease;
 }
 
-.photo__button:hover img { filter: brightness(1.02); }
+.photo__button:hover img { filter: brightness(1.03); }
 
 /* =========================================================
-   Gallery CTA — small editorial call-to-action below the scatter
+   View-all CTA below the series stack.
    ========================================================= */
 
-.gallery__cta {
+.work__cta {
   display: flex;
   justify-content: center;
-  margin-top: clamp(1.5rem, 4vw, 3rem);
+  margin-top: clamp(1rem, 3vw, 2rem);
 }
 
-.gallery__cta-button {
+.work__cta-button {
   appearance: none;
-  background: transparent;
-  border: 0;
+  background: rgba(252, 252, 252, 0.94);
+  border: 1px solid rgba(0, 0, 0, 0.12);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  padding: 0.6rem 0;
+  padding: 0.85rem 1.5rem;
   font-family: var(--serif);
   font-size: 1rem;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   color: var(--ink);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 999px;
   transition:
-    opacity 200ms ease,
-    letter-spacing 220ms ease,
+    transform 200ms ease,
+    background-color 220ms ease,
     border-color 220ms ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-.gallery__cta-button:hover {
-  opacity: 0.78;
-  letter-spacing: 0.07em;
-  border-bottom-color: rgba(0, 0, 0, 0.35);
+.work__cta-button:hover {
+  transform: translateY(-1px);
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.25);
 }
 
-.gallery__cta-button:focus-visible {
+.work__cta-button:focus-visible {
   outline: 1px solid var(--ink);
   outline-offset: 4px;
-  border-radius: 2px;
 }
 
-.gallery__cta-button svg {
-  transition: transform 220ms ease;
-}
-
-.gallery__cta-button:hover svg { transform: translateX(3px); }
+.work__cta-button svg { transition: transform 220ms ease; }
+.work__cta-button:hover svg { transform: translateX(3px); }
 
 /* =========================================================
-   ABOUT / CONTACT — quiet supporting sections
+   ABOUT / CONTACT — quiet supporting sections, also on a
+   paper card so they read clearly over the backdrop.
    ========================================================= */
 
 .section {
-  max-width: 40rem;
-  margin: 0 auto;
-  padding: 6rem clamp(1.25rem, 4vw, 2rem);
+  position: relative;
+  max-width: 44rem;
+  margin: clamp(2rem, 5vw, 4rem) auto;
+  padding: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 3.5vw, 2.5rem);
+  background: rgba(252, 252, 252, 0.94);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  backdrop-filter: blur(10px) saturate(1.05);
+  -webkit-backdrop-filter: blur(10px) saturate(1.05);
+  box-shadow: 0 30px 60px -40px rgba(0, 0, 0, 0.45);
 }
 
 .section__heading {
@@ -207,9 +423,9 @@
 .measurements {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem 2rem;
 }
 
 .measurements__row {
@@ -251,25 +467,27 @@
 .section__list a:hover { opacity: 0.6; }
 
 /* =========================================================
-   Responsive — collapse the scatter to a simple stack on phones
-   so nothing overlaps awkwardly on narrow screens.
+   Responsive
    ========================================================= */
 
-@media (max-width: 720px) {
-  .gallery {
-    aspect-ratio: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
-    padding: 6rem 1rem 2rem;
-  }
+@media (max-width: 960px) {
+  .series__grid { columns: 2; }
+  .measurements { grid-template-columns: 1fr; }
+}
 
-  .photo {
-    position: static;
-    width: 100% !important;
-  }
+@media (max-width: 640px) {
+  .hero { padding: 0 1.25rem; }
+  .hero__inner { margin-bottom: 12vh; }
+  .hero__cta { gap: 1rem 1.5rem; }
+  .backdrop { background-position: center 22%; }
+}
 
-  .photo:nth-child(4n) {
-    grid-column: span 2;
+@media (max-width: 520px) {
+  .series__grid {
+    columns: 2;
+    column-gap: 6px;
   }
+  .series__grid--two { columns: 1; }
+  .photo { margin-bottom: 6px; }
+  .series { padding: 1.5rem 1rem; }
 }

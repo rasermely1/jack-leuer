@@ -1,14 +1,17 @@
+export type PhotoCategory = 'runway' | 'studio' | 'group' | 'bw';
+
 export interface Photo {
   file: string;
   alt: string;
-  /** Top position on the gallery canvas (percent). */
-  top: number;
-  /** Left position on the gallery canvas (percent). */
-  left: number;
-  /** Rendered width (percent of canvas). */
-  width: number;
-  /** Whether the photo is featured in the scattered hero layout. */
+  category: PhotoCategory;
+  /** Optional flag to elevate a photo within its category section. */
   featured?: boolean;
+}
+
+export interface CategorySection {
+  id: PhotoCategory;
+  label: string;
+  blurb: string;
 }
 
 export interface Measurement {
@@ -19,17 +22,46 @@ export interface Measurement {
 export interface Profile {
   name: string;
   initials: string;
+  tagline: string;
   email: string;
   instagram: string;
+  /** Photo file used as the persistent landing backdrop. */
+  heroFile: string;
   measurements: Measurement[];
+  categories: CategorySection[];
   photos: Photo[];
 }
+
+export const CATEGORIES: CategorySection[] = [
+  {
+    id: 'runway',
+    label: 'Runway',
+    blurb: 'Walks, low-angle, and editorial pose work from the runway.',
+  },
+  {
+    id: 'studio',
+    label: 'Studio',
+    blurb: 'Solo studio frames on white — closeup, profile, and full body.',
+  },
+  {
+    id: 'group',
+    label: 'Group',
+    blurb: 'Lineups and group editorial shot alongside the cast.',
+  },
+  {
+    id: 'bw',
+    label: 'Black & White',
+    blurb: 'Monochrome selects pulled from the same sets.',
+  },
+];
 
 export const PROFILE: Profile = {
   name: 'J. Leuer',
   initials: 'JL',
+  tagline: 'Model — runway, editorial, and campaign.',
   email: 'ndhockey03@gmail.com',
   instagram: 'https://www.instagram.com/jleuer03/',
+  heroFile: 'baggy-closeup.jpg',
   measurements: [
     { label: 'Height', value: '6\'2"' },
     { label: 'Weight', value: '160 lb' },
@@ -43,29 +75,37 @@ export const PROFILE: Profile = {
     { label: 'Hair', value: 'Brown' },
     { label: 'Eyes', value: 'Blue' },
   ],
-  // Positions are hand-tuned against a 4:3 gallery canvas so each photo's
-  // rendered bounding box (using its intrinsic aspect ratio) stays clear of
-  // its neighbours. If you swap a file, re-check that its `width` leaves
-  // room for the resulting height.
-  //
-  // `featured: true` photos appear in the scattered hero layout on the
-  // landing page. Every photo — featured or not — shows up in the full
-  // gallery lightbox.
+  categories: CATEGORIES,
+  // Photos are organized by the keyword in their filename. Precedence:
+  //   black-and-white-* → bw, *group-photo* / *lineup* → group,
+  //   *runway* / *runwyay* → runway, otherwise → studio.
   photos: [
-    { file: 'skyline.jpeg',            alt: 'Skyline',                top:  4, left: 26, width: 18, featured: true },
-    { file: 'navy-twin.jpeg',          alt: 'Navy — twin',            top: 10, left: 64, width:  6, featured: true },
-    { file: 'peace.jpeg',              alt: 'Peace',                  top: 26, left:  6, width: 12, featured: true },
-    { file: 'supra.jpeg',              alt: 'Supra',                  top: 42, left: 48, width:  5, featured: true },
-    { file: 'stupid.jpeg',             alt: 'Portrait',               top: 44, left: 20, width: 15, featured: true },
-    { file: 'money-hang-with-me.jpeg', alt: 'Money — hang with me',   top: 26, left: 78, width: 13, featured: true },
-    { file: 'golden-plane.jpeg',       alt: 'Golden plane',           top: 62, left: 58, width: 16, featured: true },
-    { file: 'lake.jpeg',               alt: 'Lake',                   top: 70, left:  8, width:  6, featured: true },
-    { file: 'respect.jpeg',            alt: 'Respect',                top: 58, left: 84, width: 10, featured: true },
-    { file: 'hunger.jpeg',             alt: 'Hunger',                 top:  0, left:  0, width:  0 },
-    { file: 'lake-twin.jpeg',          alt: 'Lake — twin',            top:  0, left:  0, width:  0 },
-    { file: 'drone-shot.jpeg',         alt: 'Drone shot',             top:  0, left:  0, width:  0 },
-    { file: 'ginger-bread.jpeg',       alt: 'Ginger bread',           top:  0, left:  0, width:  0 },
-    { file: '500.jpeg',                alt: '500',                    top:  0, left:  0, width:  0 },
-    { file: 'goats.jpeg',              alt: 'Group portrait',         top:  0, left:  0, width:  0 },
+    { file: 'back-and-white-baggy-reverse.jpg',        alt: 'Black & white — baggy, reverse',     category: 'bw' },
+    { file: 'black-and-white-baggy-reverse.jpg',       alt: 'Black & white — baggy, reverse II',  category: 'bw' },
+    { file: 'black-and-white-lineup.jpg',              alt: 'Black & white — cast lineup',        category: 'bw' },
+
+    { file: 'baggy-closeup.jpg',                       alt: 'Baggy fit — closeup',                category: 'studio', featured: true },
+    { file: 'baggy-solo.jpg',                          alt: 'Baggy fit — solo',                   category: 'studio' },
+    { file: 'beach-solo-white-bg.jpg',                 alt: 'Beach look — solo on white',         category: 'studio' },
+    { file: 'black-solo-white-bg.jpg',                 alt: 'Black look — solo on white',         category: 'studio' },
+    { file: 'black-solo-white-bg-side.jpg',            alt: 'Black look — solo, side profile',    category: 'studio' },
+    { file: 'dark-baggy-solo-white-bg.jpg',            alt: 'Dark baggy — solo on white',         category: 'studio' },
+    { file: 'dark-baggy-solo.jpg',                     alt: 'Dark baggy — solo',                  category: 'studio' },
+
+    { file: 'dark-baggy-group-photo.jpeg',             alt: 'Dark baggy — group',                 category: 'group' },
+    { file: 'runway-walk-group-photo-light.JPG',       alt: 'Runway walk — group, light',         category: 'group' },
+
+    { file: 'cow-runway-walk.jpeg',                    alt: 'Runway walk — cow look',             category: 'runway' },
+    { file: 'dark-baggy-runway-walk.JPG',              alt: 'Runway walk — dark baggy',           category: 'runway' },
+    { file: 'dark-runway-low-angle.JPG',               alt: 'Runway — low angle, dark',           category: 'runway' },
+    { file: 'light-cropped-runwyay-pose.jpg',          alt: 'Runway pose — cropped, light',       category: 'runway' },
+    { file: 'low-angle-runway-walk-crop-top.JPG',      alt: 'Runway walk — low angle, crop I',    category: 'runway' },
+    { file: 'low-angle-runway-walk-crop-top2.JPG',     alt: 'Runway walk — low angle, crop II',   category: 'runway' },
+    { file: 'low-angle-runway-walk-cropped-lights.JPG',alt: 'Runway walk — low angle, lights',    category: 'runway' },
+    { file: 'pjamas-runway-walk.jpeg',                 alt: 'Runway walk — pajamas',              category: 'runway' },
+    { file: 'runway-low-angle-cow.JPG',                alt: 'Runway — low angle, cow look',       category: 'runway' },
+    { file: 'runway-pose-beach.jpeg',                  alt: 'Runway pose — beach',                category: 'runway' },
+    { file: 'white-runway-walk.jpeg',                  alt: 'Runway walk — white',                category: 'runway' },
+    { file: 'white-shirt-runway-pose.jpg',             alt: 'Runway pose — white shirt',          category: 'runway' },
   ],
 };

@@ -1,6 +1,8 @@
 @if (open) {
   <div
     class="viewer"
+    [class.viewer--grid]="mode() === 'grid'"
+    [class.viewer--single]="mode() === 'single'"
     role="dialog"
     aria-modal="true"
     aria-label="Gallery"
@@ -18,42 +20,82 @@
       </svg>
     </button>
 
-    <button
-      class="viewer__nav viewer__nav--prev"
-      type="button"
-      aria-label="Previous photo"
-      (click)="prev()"
-    >
-      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-        <path d="M15 5L8 12l7 7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </button>
+    @if (mode() === 'grid') {
+      <div class="viewer__sheet" data-backdrop="true">
+        <header class="viewer__sheet-header">
+          <h2 class="viewer__sheet-title">Gallery</h2>
+          <p class="viewer__sheet-meta">{{ photos.length }} photos</p>
+        </header>
 
-    <figure class="viewer__stage">
-      @if (current(); as photo) {
-        @for (p of [photo]; track p.file) {
-          <img
-            [src]="'/gallery/' + p.file"
-            [alt]="p.alt"
-            (click)="onImageClick($event)"
-            decoding="async"
-            fetchpriority="high"
-          />
+        <div class="viewer__grid" role="list">
+          @for (p of photos; track p.file; let i = $index) {
+            <button
+              type="button"
+              class="viewer__tile"
+              role="listitem"
+              [attr.aria-label]="'Open ' + p.alt"
+              (click)="selectPhoto(i)"
+            >
+              <img
+                [src]="'/gallery/' + p.file"
+                [alt]="p.alt"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          }
+        </div>
+      </div>
+    } @else {
+      <button
+        class="viewer__back"
+        type="button"
+        aria-label="Back to gallery"
+        (click)="backToGrid()"
+      >
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        <span>All photos</span>
+      </button>
+
+      <button
+        class="viewer__nav viewer__nav--prev"
+        type="button"
+        aria-label="Previous photo"
+        (click)="prev()"
+      >
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path d="M15 5L8 12l7 7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <figure class="viewer__stage">
+        @if (current(); as photo) {
+          @for (p of [photo]; track p.file) {
+            <img
+              [src]="'/gallery/' + p.file"
+              [alt]="p.alt"
+              (click)="onImageClick($event)"
+              decoding="async"
+              fetchpriority="high"
+            />
+          }
         }
-      }
-    </figure>
+      </figure>
 
-    <button
-      class="viewer__nav viewer__nav--next"
-      type="button"
-      aria-label="Next photo"
-      (click)="next()"
-    >
-      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-        <path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </button>
+      <button
+        class="viewer__nav viewer__nav--next"
+        type="button"
+        aria-label="Next photo"
+        (click)="next()"
+      >
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
 
-    <div class="viewer__counter" aria-live="polite">{{ counter() }}</div>
+      <div class="viewer__counter" aria-live="polite">{{ counter() }}</div>
+    }
   </div>
 }

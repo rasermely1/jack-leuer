@@ -1,6 +1,15 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
-import { PROFILE, Photo } from '../gallery.data';
+import {
+  CategorySection,
+  PROFILE,
+  Photo,
+  PhotoCategory,
+} from '../gallery.data';
 import { GalleryViewerComponent } from '../shared/gallery-viewer/gallery-viewer.component';
+
+interface CategoryGroup extends CategorySection {
+  photos: Photo[];
+}
 
 @Component({
   selector: 'app-home',
@@ -12,15 +21,19 @@ import { GalleryViewerComponent } from '../shared/gallery-viewer/gallery-viewer.
 export class HomeComponent {
   readonly profile = PROFILE;
 
-  readonly featuredPhotos: Photo[] = this.profile.photos.filter(
-    (p) => p.featured,
-  );
+  /** Photos bucketed by category, in the order declared in `categories`. */
+  readonly groups: CategoryGroup[] = this.profile.categories.map((c) => ({
+    ...c,
+    photos: this.profile.photos.filter((p) => p.category === c.id),
+  }));
 
   readonly viewerOpen = signal(false);
   readonly viewerStart = signal(0);
+  readonly viewerMode = signal<'grid' | 'single'>('grid');
 
-  openViewer(startIndex = 0): void {
+  openViewer(startIndex = 0, mode: 'grid' | 'single' = 'grid'): void {
     this.viewerStart.set(startIndex);
+    this.viewerMode.set(mode);
     this.viewerOpen.set(true);
   }
 
@@ -30,5 +43,9 @@ export class HomeComponent {
 
   indexOf(photo: Photo): number {
     return this.profile.photos.indexOf(photo);
+  }
+
+  trackCategory(_index: number, group: CategoryGroup): PhotoCategory {
+    return group.id;
   }
 }

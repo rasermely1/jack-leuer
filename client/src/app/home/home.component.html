@@ -1,8 +1,15 @@
+<div
+  class="backdrop"
+  [style.background-image]="'url(/gallery/' + profile.heroFile + ')'"
+  aria-hidden="true"
+></div>
+<div class="backdrop__veil" aria-hidden="true"></div>
+
 <header class="nav">
-  <a class="nav__mark" href="#work" aria-label="Home">{{ profile.initials }}</a>
+  <a class="nav__mark" href="#top" aria-label="Home">{{ profile.initials }}</a>
   <nav class="nav__links" aria-label="Primary">
     <a href="#work">Work</a>
-    <button type="button" class="nav__button" (click)="openViewer(0)">
+    <button type="button" class="nav__button" (click)="openViewer(0, 'grid')">
       Gallery
     </button>
     <a href="#about">About</a>
@@ -23,34 +30,84 @@
   </nav>
 </header>
 
-<main>
-  <section id="work" class="gallery" aria-label="Work">
-    @for (p of featuredPhotos; track p.file) {
-      <figure
-        class="photo"
-        [style.top.%]="p.top"
-        [style.left.%]="p.left"
-        [style.width.%]="p.width"
-      >
+<main id="top">
+  <section class="hero" aria-label="Intro">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">Portfolio</p>
+      <h1 class="hero__name">{{ profile.name }}</h1>
+      <p class="hero__tagline">{{ profile.tagline }}</p>
+
+      <div class="hero__cta">
         <button
           type="button"
-          class="photo__button"
-          [attr.aria-label]="'Open ' + p.alt + ' in gallery'"
-          (click)="openViewer(indexOf(p))"
+          class="hero__cta-button"
+          (click)="openViewer(0, 'grid')"
         >
-          <img [src]="'/gallery/' + p.file" [alt]="p.alt" loading="lazy" decoding="async" />
+          View gallery
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+            <path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </button>
-      </figure>
-    }
+        <a class="hero__cta-link" href="#work">Browse by series</a>
+      </div>
+    </div>
+
+    <a class="hero__scroll" href="#work" aria-label="Scroll to work">
+      <span>Scroll</span>
+      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+        <path d="M12 5v14M5 13l7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
   </section>
 
-  <div class="gallery__cta">
-    <button type="button" class="gallery__cta-button" (click)="openViewer(0)">
-      View all photos
-      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
-        <path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </button>
+  <div id="work" class="work">
+    @for (group of groups; track trackCategory($index, group)) {
+      <section class="series" [attr.aria-labelledby]="'series-' + group.id">
+        <header class="series__header">
+          <p class="series__count">{{ group.photos.length }} photos</p>
+          <h2 class="series__heading" [id]="'series-' + group.id">
+            {{ group.label }}
+          </h2>
+          <p class="series__blurb">{{ group.blurb }}</p>
+        </header>
+
+        <div
+          class="series__grid"
+          [class.series__grid--two]="group.photos.length <= 2"
+        >
+          @for (p of group.photos; track p.file) {
+            <figure class="photo">
+              <button
+                type="button"
+                class="photo__button"
+                [attr.aria-label]="'Open ' + p.alt + ' in gallery'"
+                (click)="openViewer(indexOf(p), 'single')"
+              >
+                <img
+                  [src]="'/gallery/' + p.file"
+                  [alt]="p.alt"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+            </figure>
+          }
+        </div>
+      </section>
+    }
+
+    <div class="work__cta">
+      <button
+        type="button"
+        class="work__cta-button"
+        (click)="openViewer(0, 'grid')"
+      >
+        View all photos
+        <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+          <path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
   </div>
 
   <section id="about" class="section" aria-label="About">
@@ -86,5 +143,6 @@
   [photos]="profile.photos"
   [open]="viewerOpen()"
   [startIndex]="viewerStart()"
+  [startMode]="viewerMode()"
   (closed)="closeViewer()"
 />
