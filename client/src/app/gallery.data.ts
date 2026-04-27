@@ -1,4 +1,4 @@
-export type PhotoCategory = 'runway' | 'studio' | 'group' | 'bw';
+export type PhotoCategory = string;
 
 export interface Photo {
   file: string;
@@ -111,23 +111,50 @@ export const PROFILE: Profile = {
 export const EVIL_PROFILE: Profile = {
   ...PROFILE,
   heroFile: 'evilmode/background.jpeg',
+  categories: [
+    {
+      id: 'portal',
+      label: 'Portal + Core Lore',
+      blurb: 'The opening layer: background, eve, and the egg.',
+    },
+    {
+      id: 'faces',
+      label: 'DaBaby / Exstatic / Jack',
+      blurb: 'Character portraits and front-facing chaos.',
+    },
+    {
+      id: 'artifacts',
+      label: 'Weapon / Goat / Hunger',
+      blurb: 'Legendary items and cursed objects.',
+    },
+    {
+      id: 'timeline',
+      label: 'Pisa / Hunter / Patriots',
+      blurb: 'Timeline jumps and location-based lore.',
+    },
+    {
+      id: 'saga',
+      label: 'Belly Bump / Cave Bellies / Birthday / EP / Amaze',
+      blurb: 'Saga moments, group chapters, and finale energy.',
+    },
+  ],
   photos: [
-    { file: 'evilmode/background.jpeg', alt: 'Evil mode backdrop', category: 'studio' },
-    { file: 'evilmode/eve.png', alt: 'Eve', category: 'studio' },
-    { file: 'evilmode/the-egg.jpeg', alt: 'The egg', category: 'studio' },
-    { file: 'evilmode/dababy.jpeg', alt: 'DaBaby', category: 'studio' },
-    { file: 'evilmode/exstatic.jpeg', alt: 'Exstatic', category: 'studio' },
-    { file: 'evilmode/jack-leuer.jpeg', alt: 'Jack Leuer', category: 'studio' },
-    { file: 'evilmode/weapon.jpeg', alt: 'Weapon', category: 'studio' },
-    { file: 'evilmode/goat.jpeg', alt: 'Goat', category: 'studio' },
-    { file: 'evilmode/hunger.jpeg', alt: 'Hunger', category: 'studio' },
-    { file: 'evilmode/pisa.jpeg', alt: 'Pisa', category: 'runway' },
-    { file: 'evilmode/hunter.jpeg', alt: 'Hunter', category: 'runway' },
-    { file: 'evilmode/patriots.jpeg', alt: 'Patriots', category: 'runway' },
-    { file: 'evilmode/belly-bump.jpeg', alt: 'Belly bump', category: 'group' },
-    { file: 'evilmode/cave-bellies.jpeg', alt: 'Cave bellies', category: 'group' },
-    { file: 'evilmode/our-first-ep.jpeg', alt: 'Our first EP', category: 'group' },
-    { file: 'evilmode/birthday.jpeg', alt: 'Birthday', category: 'group' },
-    { file: 'evilmode/amaze-amaze-amaze.jpeg', alt: 'Amaze amaze amaze', category: 'bw' },
+    { file: 'evilmode/background.jpeg', alt: 'Background', category: 'portal' },
+    { file: 'evilmode/eve.png', alt: 'Eve', category: 'portal' },
+    { file: 'evilmode/the-egg.jpeg', alt: 'The Egg', category: 'portal' },
+    { file: 'evilmode/dababy.jpeg', alt: 'DaBaby', category: 'faces' },
+    { file: 'evilmode/exstatic.jpeg', alt: 'Exstatic', category: 'faces' },
+    { file: 'evilmode/jack-leuer.jpeg', alt: 'Jack Leuer', category: 'faces' },
+    { file: 'evilmode/weapon.jpeg', alt: 'Weapon', category: 'artifacts' },
+    { file: 'evilmode/goat.jpeg', alt: 'Goat', category: 'artifacts' },
+    { file: 'evilmode/hunger.jpeg', alt: 'Hunger', category: 'artifacts' },
+    { file: 'evilmode/pisa.jpeg', alt: 'Pisa', category: 'timeline' },
+    { file: 'evilmode/hunter.jpeg', alt: 'Hunter', category: 'timeline' },
+    { file: 'evilmode/patriots.jpeg', alt: 'Patriots', category: 'timeline' },
+    { file: 'evilmode/belly-bump.jpeg', alt: 'Belly Bump', category: 'saga' },
+    { file: 'evilmode/cave-bellies.jpeg', alt: 'Cave Bellies', category: 'saga' },
+    { file: 'evilmode/our-first-ep.jpeg', alt: 'Our First EP', category: 'saga' },
+    { file: 'evilmode/birthday.jpeg', alt: 'Birthday', category: 'saga' },
+    { file: 'evilmode/amaze-amaze-amaze.jpeg', alt: 'Amaze Amaze Amaze', category: 'saga' },
   ],
 };
