@@ -57,7 +57,7 @@ export const PROFILE: Profile = {
   name: 'J. Leuer',
   initials: 'JL',
   tagline: 'Model — runway, editorial, and campaign.',
-  email: 'ndhockey03@gmail.com',
+  email: 'jackleuer@gmail.com',
   instagram: 'https://www.instagram.com/jleuer03/',
   heroFile: 'baggy-closeup.jpg',
   measurements: [
