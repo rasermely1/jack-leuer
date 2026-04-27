@@ -2,7 +2,8 @@
 /**
  * Gallery image pipeline.
  *
- * For every source image in `public/gallery/`, emit responsive variants in
+ * For every source image in `public/gallery/` and `public/evilmode/`,
+ * emit responsive variants in
  *   - AVIF (best compression, broad modern-browser support)
  *   - WebP (universal modern fallback)
  *   - JPEG (legacy fallback, also covers cases where the browser refuses
@@ -29,9 +30,12 @@ import sharp from 'sharp';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, '..');
-const sourceDir = path.join(projectRoot, 'public', 'gallery');
 const outputDir = path.join(projectRoot, 'public', 'img');
 const manifestTsPath = path.join(projectRoot, 'src', 'app', 'gallery.manifest.ts');
+const SOURCE_DIRS = [
+  { prefix: '', dir: path.join(projectRoot, 'public', 'gallery') },
+  { prefix: 'evilmode', dir: path.join(projectRoot, 'public', 'evilmode') },
+];
 
 const TARGET_WIDTHS = [480, 800, 1200, 1600, 2400];
 
@@ -79,11 +83,18 @@ async function newer(target, source) {
 }
 
 async function listSourceImages() {
-  const entries = await fs.readdir(sourceDir, { withFileTypes: true });
-  return entries
-    .filter((e) => e.isFile() && SOURCE_EXTENSIONS.has(path.extname(e.name).toLowerCase()))
-    .map((e) => e.name)
-    .sort();
+  const all = [];
+  for (const source of SOURCE_DIRS) {
+    if (!(await exists(source.dir))) continue;
+    const entries = await fs.readdir(source.dir, { withFileTypes: true });
+    for (const entry of entries) {
+      if (!entry.isFile()) continue;
+      if (!SOURCE_EXTENSIONS.has(path.extname(entry.name).toLowerCase())) continue;
+      const key = source.prefix ? `${source.prefix}/${entry.name}` : entry.name;
+      all.push({ key, fileName: entry.name, sourceDir: source.dir });
+    }
+  }
+  return all.sort((a, b) => a.key.localeCompare(b.key));
 }
 
 /**
@@ -119,10 +130,10 @@ async function emitVariant(input, output, width, format) {
   await pipeline.toFile(output);
 }
 
-async function processOne(file) {
-  const sourcePath = path.join(sourceDir, file);
-  const base = file.replace(/\.[^.]+$/, '');
-  const dir = path.join(outputDir, base);
+async function processOne(source) {
+  const sourcePath = path.join(source.sourceDir, source.fileName);
+  const base = source.key.replace(/\.[^.]+$/, '');
+  const dir = path.join(outputDir, ...base.split('/'));
   await fs.mkdir(dir, { recursive: true });
 
   const meta = await sharp(sourcePath).rotate().metadata();
@@ -150,7 +161,7 @@ async function processOne(file) {
 
   /** @type {ManifestEntry} */
   const entry = {
-    file,
+    file: source.key,
     base,
     width: naturalWidth,
     height: naturalHeight,
@@ -165,7 +176,7 @@ async function processOne(file) {
 async function main() {
   const files = await listSourceImages();
   if (files.length === 0) {
-    console.log(`${DIM}No source images found in ${sourceDir}${RESET}`);
+    console.log(`${DIM}No source images found in configured source dirs${RESET}`);
     return;
   }
 
@@ -178,12 +189,12 @@ async function main() {
 
   // Process serially: sharp is already multi-threaded internally and
   // running many encodes in parallel just thrashes memory on big JPEGs.
-  for (const file of files) {
-    const { entry, regenerated } = await processOne(file);
-    photos[file] = entry;
+  for (const source of files) {
+    const { entry, regenerated } = await processOne(source);
+    photos[source.key] = entry;
     totalRegenerated += regenerated;
     const tag = regenerated > 0 ? `${GREEN}generated ${regenerated}${RESET}` : `${DIM}cached${RESET}`;
-    console.log(`${CYAN}gallery${RESET} ${file} ${DIM}→${RESET} ${tag}`);
+    console.log(`${CYAN}gallery${RESET} ${source.key} ${DIM}→${RESET} ${tag}`);
   }
 
   const manifest = {

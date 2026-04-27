@@ -215,6 +215,65 @@
   border-bottom-color: rgba(245, 243, 238, 0.7);
 }
 
+.hero__secret-wrap {
+  margin-top: 0.85rem;
+}
+
+.hero__secret-button,
+.hero__reset-button {
+  appearance: none;
+  border-radius: 999px;
+  border: 1px solid rgba(245, 243, 238, 0.45);
+  padding: 0.48rem 0.95rem;
+  font-family: var(--serif);
+  font-size: 0.84rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition:
+    opacity 220ms ease,
+    transform 220ms ease,
+    background-color 220ms ease,
+    color 220ms ease,
+    border-color 220ms ease;
+}
+
+.hero__secret-button {
+  background: transparent;
+  color: transparent;
+  opacity: 0;
+  border-color: transparent;
+}
+
+.hero__cta:hover + .hero__secret-wrap .hero__secret-button,
+.hero__secret-wrap:hover .hero__secret-button,
+.hero__secret-button:focus-visible {
+  opacity: 1;
+  color: #f5f3ee;
+  border-color: rgba(245, 243, 238, 0.65);
+}
+
+.hero__secret-button:focus-visible,
+.hero__reset-button:focus-visible {
+  outline: 1px solid rgba(245, 243, 238, 0.95);
+  outline-offset: 3px;
+}
+
+.hero__secret-button:hover {
+  transform: translateY(-1px);
+  background: rgba(245, 243, 238, 0.18);
+}
+
+.hero__reset-button {
+  background: rgba(245, 243, 238, 0.96);
+  color: #181818;
+  border-color: rgba(245, 243, 238, 0.85);
+}
+
+.hero__reset-button:hover {
+  transform: translateY(-1px);
+  background: #ffffff;
+}
+
 .hero__scroll {
   position: absolute;
   bottom: 2.25rem;

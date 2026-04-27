@@ -107,3 +107,27 @@ export const PROFILE: Profile = {
     { file: 'white-shirt-runway-pose.jpg',             alt: 'Runway pose — white shirt',          category: 'runway' },
   ],
 };
+
+export const EVIL_PROFILE: Profile = {
+  ...PROFILE,
+  heroFile: 'evilmode/background.jpeg',
+  photos: [
+    { file: 'evilmode/background.jpeg', alt: 'Evil mode backdrop', category: 'studio' },
+    { file: 'evilmode/eve.png', alt: 'Eve', category: 'studio' },
+    { file: 'evilmode/the-egg.jpeg', alt: 'The egg', category: 'studio' },
+    { file: 'evilmode/dababy.jpeg', alt: 'DaBaby', category: 'studio' },
+    { file: 'evilmode/exstatic.jpeg', alt: 'Exstatic', category: 'studio' },
+    { file: 'evilmode/jack-leuer.jpeg', alt: 'Jack Leuer', category: 'studio' },
+    { file: 'evilmode/weapon.jpeg', alt: 'Weapon', category: 'studio' },
+    { file: 'evilmode/goat.jpeg', alt: 'Goat', category: 'studio' },
+    { file: 'evilmode/hunger.jpeg', alt: 'Hunger', category: 'studio' },
+    { file: 'evilmode/pisa.jpeg', alt: 'Pisa', category: 'runway' },
+    { file: 'evilmode/hunter.jpeg', alt: 'Hunter', category: 'runway' },
+    { file: 'evilmode/patriots.jpeg', alt: 'Patriots', category: 'runway' },
+    { file: 'evilmode/belly-bump.jpeg', alt: 'Belly bump', category: 'group' },
+    { file: 'evilmode/cave-bellies.jpeg', alt: 'Cave bellies', category: 'group' },
+    { file: 'evilmode/our-first-ep.jpeg', alt: 'Our first EP', category: 'group' },
+    { file: 'evilmode/birthday.jpeg', alt: 'Birthday', category: 'group' },
+    { file: 'evilmode/amaze-amaze-amaze.jpeg', alt: 'Amaze amaze amaze', category: 'bw' },
+  ],
+};

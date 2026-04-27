@@ -1,6 +1,6 @@
 <app-gallery-image
   class="backdrop"
-  [file]="profile.heroFile"
+  [file]="activeProfile().heroFile"
   alt=""
   sizes="100vw"
   layout="tile"
@@ -12,7 +12,7 @@
 <div class="backdrop__veil" aria-hidden="true"></div>
 
 <header class="nav">
-  <a class="nav__mark" href="#top" aria-label="Home">{{ profile.initials }}</a>
+  <a class="nav__mark" href="#top" aria-label="Home">{{ activeProfile().initials }}</a>
   <nav class="nav__links" aria-label="Primary">
     <a href="#work">Work</a>
     <button type="button" class="nav__button" (click)="openViewer(0, 'grid')">
@@ -22,7 +22,7 @@
     <a href="#contact">Contact</a>
     <a
       class="nav__ig"
-      [href]="profile.instagram"
+      [href]="activeProfile().instagram"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Instagram"
@@ -40,8 +40,8 @@
   <section class="hero" aria-label="Intro">
     <div class="hero__inner">
       <p class="hero__eyebrow">Portfolio</p>
-      <h1 class="hero__name">{{ profile.name }}</h1>
-      <p class="hero__tagline">{{ profile.tagline }}</p>
+      <h1 class="hero__name">{{ activeProfile().name }}</h1>
+      <p class="hero__tagline">{{ activeProfile().tagline }}</p>
 
       <div class="hero__cta">
         <button
@@ -56,6 +56,25 @@
         </button>
         <a class="hero__cta-link" href="#work">Browse by series</a>
       </div>
+      <div class="hero__secret-wrap">
+        @if (!evilModeEnabled()) {
+          <button
+            type="button"
+            class="hero__secret-button"
+            (click)="unlockEvilMode()"
+          >
+            alternate view
+          </button>
+        } @else {
+          <button
+            type="button"
+            class="hero__reset-button"
+            (click)="disableEvilMode()"
+          >
+            Return to normal view
+          </button>
+        }
+      </div>
     </div>
 
     <a class="hero__scroll" href="#work" aria-label="Scroll to work">
@@ -67,7 +86,7 @@
   </section>
 
   <div id="work" class="work">
-    @for (group of groups; track group.id) {
+    @for (group of groups(); track group.id) {
       <section class="series" [attr.aria-labelledby]="'series-' + group.id">
         <header class="series__header">
           <p class="series__count">{{ group.photos.length }} photos</p>
@@ -118,11 +137,11 @@
   <section id="about" class="section" aria-label="About">
     <h2 class="section__heading">About</h2>
     <p class="section__body">
-      {{ profile.name }} is a model based in New York. Available for editorial,
+      {{ activeProfile().name }} is a model based in New York. Available for editorial,
       runway, and campaign work.
     </p>
     <dl class="measurements">
-      @for (m of profile.measurements; track m.label) {
+      @for (m of activeProfile().measurements; track m.label) {
         <div class="measurements__row">
           <dt>{{ m.label }}</dt>
           <dd>{{ m.value }}</dd>
@@ -134,9 +153,9 @@
   <section id="contact" class="section" aria-label="Contact">
     <h2 class="section__heading">Contact</h2>
     <ul class="section__list">
-      <li><a [href]="'mailto:' + profile.email">{{ profile.email }}</a></li>
+      <li><a [href]="'mailto:' + activeProfile().email">{{ activeProfile().email }}</a></li>
       <li>
-        <a [href]="profile.instagram" target="_blank" rel="noopener noreferrer">
+        <a [href]="activeProfile().instagram" target="_blank" rel="noopener noreferrer">
           Instagram
         </a>
       </li>
@@ -145,7 +164,7 @@
 </main>
 
 <app-gallery-viewer
-  [photos]="profile.photos"
+  [photos]="activeProfile().photos"
   [open]="viewerOpen()"
   [startIndex]="viewerStart()"
   [startMode]="viewerMode()"
