@@ -1,5 +1,4 @@
 import {
-  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
   ElementRef,
@@ -8,6 +7,7 @@ import {
   NgZone,
   OnDestroy,
   ViewChild,
+  afterNextRender,
 } from '@angular/core';
 import * as THREE from 'three';
 
@@ -42,7 +42,7 @@ import * as THREE from 'three';
     `,
   ],
 })
-export class WaterTrailComponent implements AfterViewInit, OnDestroy {
+export class WaterTrailComponent implements OnDestroy {
   @ViewChild('canvas', { static: true })
   private readonly canvasRef!: ElementRef<HTMLCanvasElement>;
 
@@ -90,10 +90,11 @@ export class WaterTrailComponent implements AfterViewInit, OnDestroy {
     lastMoveTime: 0,
   };
 
-  constructor(private readonly zone: NgZone) {}
-
-  ngAfterViewInit(): void {
-    this.zone.runOutsideAngular(() => this.init());
+  constructor(private readonly zone: NgZone) {
+    // `afterNextRender` only fires in the browser, so the WebGL setup is
+    // automatically skipped during prerendering / SSR — no need to guard
+    // against a missing `window` or `WebGLRenderingContext`.
+    afterNextRender(() => this.zone.runOutsideAngular(() => this.init()));
   }
 
   ngOnDestroy(): void {

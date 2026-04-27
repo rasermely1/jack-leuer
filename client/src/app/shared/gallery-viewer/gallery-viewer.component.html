@@ -36,11 +36,11 @@
               [attr.aria-label]="'Open ' + p.alt"
               (click)="selectPhoto(i)"
             >
-              <img
-                [src]="'/gallery/' + p.file"
+              <app-gallery-image
+                [file]="p.file"
                 [alt]="p.alt"
-                loading="lazy"
-                decoding="async"
+                layout="tile"
+                sizes="(max-width: 640px) 50vw, (max-width: 960px) 33vw, 25vw"
               />
             </button>
           }
@@ -70,15 +70,16 @@
         </svg>
       </button>
 
-      <figure class="viewer__stage">
+      <figure class="viewer__stage" (click)="onImageClick($event)">
         @if (current(); as photo) {
           @for (p of [photo]; track p.file) {
-            <img
-              [src]="'/gallery/' + p.file"
+            <app-gallery-image
+              [file]="p.file"
               [alt]="p.alt"
-              (click)="onImageClick($event)"
-              decoding="async"
-              fetchpriority="high"
+              layout="stage"
+              sizes="(max-width: 720px) 92vw, min(62vw, 720px)"
+              fetchPriority="high"
+              loading="eager"
             />
           }
         }

@@ -1,0 +1,23 @@
+@if (entry(); as e) {
+  <picture
+    class="gallery-image"
+    [class.gallery-image--tile]="layout === 'tile'"
+    [class.gallery-image--stage]="layout === 'stage'"
+    [style.background-image]="layout !== 'stage' ? lqipStyle() : null"
+    [style.aspect-ratio]="layout === 'masonry' ? e.width + ' / ' + e.height : null"
+  >
+    <source type="image/avif" [srcset]="avifSrcset()" [attr.sizes]="sizes" />
+    <source type="image/webp" [srcset]="webpSrcset()" [attr.sizes]="sizes" />
+    <img
+      [src]="fallbackSrc()"
+      [srcset]="jpgSrcset()"
+      [attr.sizes]="sizes"
+      [alt]="alt"
+      [width]="e.width"
+      [height]="e.height"
+      [attr.fetchpriority]="fetchPriority"
+      [attr.loading]="loading"
+      decoding="async"
+    />
+  </picture>
+}

@@ -1,10 +1,6 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
-import {
-  CategorySection,
-  PROFILE,
-  Photo,
-  PhotoCategory,
-} from '../gallery.data';
+import { CategorySection, PROFILE, Photo } from '../gallery.data';
+import { GalleryImageComponent } from '../shared/gallery-image/gallery-image.component';
 import { GalleryViewerComponent } from '../shared/gallery-viewer/gallery-viewer.component';
 
 interface CategoryGroup extends CategorySection {
@@ -15,7 +11,7 @@ interface CategoryGroup extends CategorySection {
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
-  imports: [GalleryViewerComponent],
+  imports: [GalleryImageComponent, GalleryViewerComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent {
@@ -43,9 +39,5 @@ export class HomeComponent {
 
   indexOf(photo: Photo): number {
     return this.profile.photos.indexOf(photo);
-  }
-
-  trackCategory(_index: number, group: CategoryGroup): PhotoCategory {
-    return group.id;
   }
 }

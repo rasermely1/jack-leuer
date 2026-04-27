@@ -16,11 +16,16 @@
   position: fixed;
   inset: 0;
   z-index: -2;
-  background-position: center 28%;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-color: #0c0c0c;
   will-change: transform;
+  pointer-events: none;
+}
+
+/* Match the framing of the original CSS-background hero. The
+   gallery-image component (in `tile` layout) already covers the box;
+   we just need to set `object-position` on its inner <img>. */
+.backdrop ::ng-deep img {
+  object-position: center 28%;
 }
 
 .backdrop__veil {
@@ -331,15 +336,20 @@
   outline-offset: 4px;
 }
 
-.photo img {
+.photo app-gallery-image {
   display: block;
   width: 100%;
-  height: auto;
-  object-fit: cover;
   transition: filter 280ms ease;
 }
 
-.photo__button:hover img { filter: brightness(1.03); }
+.photo__button:hover app-gallery-image { filter: brightness(1.03); }
+
+/* Inside the masonry the natural per-photo aspect ratio is what makes
+   the column flow look intentional, so let the image element's own
+   ratio drive height. */
+.photo ::ng-deep .gallery-image {
+  width: 100%;
+}
 
 /* =========================================================
    View-all CTA below the series stack.
@@ -479,7 +489,7 @@
   .hero { padding: 0 1.25rem; }
   .hero__inner { margin-bottom: 12vh; }
   .hero__cta { gap: 1rem 1.5rem; }
-  .backdrop { background-position: center 22%; }
+  .backdrop ::ng-deep img { object-position: center 22%; }
 }
 
 @media (max-width: 520px) {

@@ -4,8 +4,6 @@ export interface Photo {
   file: string;
   alt: string;
   category: PhotoCategory;
-  /** Optional flag to elevate a photo within its category section. */
-  featured?: boolean;
 }
 
 export interface CategorySection {
@@ -84,7 +82,7 @@ export const PROFILE: Profile = {
     { file: 'black-and-white-baggy-reverse.jpg',       alt: 'Black & white — baggy, reverse II',  category: 'bw' },
     { file: 'black-and-white-lineup.jpg',              alt: 'Black & white — cast lineup',        category: 'bw' },
 
-    { file: 'baggy-closeup.jpg',                       alt: 'Baggy fit — closeup',                category: 'studio', featured: true },
+    { file: 'baggy-closeup.jpg',                       alt: 'Baggy fit — closeup',                category: 'studio' },
     { file: 'baggy-solo.jpg',                          alt: 'Baggy fit — solo',                   category: 'studio' },
     { file: 'beach-solo-white-bg.jpg',                 alt: 'Beach look — solo on white',         category: 'studio' },
     { file: 'black-solo-white-bg.jpg',                 alt: 'Black look — solo on white',         category: 'studio' },

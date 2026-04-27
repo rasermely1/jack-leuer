@@ -12,6 +12,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap">
+  <!--
+    Preload the hero (matches `PROFILE.heroFile` in gallery.data.ts).
+    AVIF only — modern browsers will use this; older clients silently
+    ignore the unsupported type and fall back to the WebP / JPEG inside
+    the <picture> element on the page itself.
+  -->
+  <link
+    rel="preload"
+    as="image"
+    type="image/avif"
+    imagesrcset="/img/baggy-closeup/800.avif 800w, /img/baggy-closeup/1200.avif 1200w, /img/baggy-closeup/1600.avif 1600w, /img/baggy-closeup/2400.avif 2400w, /img/baggy-closeup/2784.avif 2784w"
+    imagesizes="100vw"
+    fetchpriority="high">
 </head>
 <body>
   <app-root></app-root>

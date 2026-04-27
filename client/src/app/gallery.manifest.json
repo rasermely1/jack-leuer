@@ -1,0 +1,2657 @@
+{
+  "generatedAt": "2026-04-27T00:32:37.783Z",
+  "widths": [
+    480,
+    800,
+    1200,
+    1600,
+    2400
+  ],
+  "formats": [
+    "avif",
+    "webp",
+    "jpg"
+  ],
+  "photos": {
+    "back-and-white-baggy-reverse.jpg": {
+      "file": "back-and-white-baggy-reverse.jpg",
+      "base": "back-and-white-baggy-reverse",
+      "width": 2784,
+      "height": 4176,
+      "aspectRatio": 0.6667,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAkABgDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAQFBgEC/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAAzM+JpTLPQmWlXZFSlDuoDPA//8QAIxAAAQMCBgMBAAAAAAAAAAAAAQACAwQSBRARIVFyEzFBQv/aAAgBAQABPwBR0Mj4XScZRRmRwCkmIoHQwx/nTKkbs4oHWxqq2WTdgqNxJsA1KLXj4QQq8tLRz7CwcA1J6rxRk3lu6xo7xBf/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AF//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AF//2Q==",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        2784
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 31226
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 88006
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 202236
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 329419
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 551763
+          },
+          "2784": {
+            "width": 2784,
+            "height": 4176,
+            "bytes": 682277
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 30944
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 83706
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 199606
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 353650
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 670298
+          },
+          "2784": {
+            "width": 2784,
+            "height": 4176,
+            "bytes": 837430
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 43422
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 114581
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 261211
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 466554
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 980419
+          },
+          "2784": {
+            "width": 2784,
+            "height": 4176,
+            "bytes": 1276621
+          }
+        }
+      }
+    },
+    "baggy-closeup.jpg": {
+      "file": "baggy-closeup.jpg",
+      "base": "baggy-closeup",
+      "width": 2784,
+      "height": 4176,
+      "aspectRatio": 0.6667,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAkABgDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQDBQb/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAMxd0mxdY4kN5bsUH2UJCFXAGEBv/8QAIxAAAgMAAQEJAAAAAAAAAAAAAREAAgMxBBITFCIjQVFhcf/aAAgBAQABPwCoZEp0TxF2EuJYK1gIAzMc7eCrVh9jmaZ2ztYW+eZ02VTUH3MSqnNahH7KmDHdiOaD02xy5UnyxlW/IeDP/8QAFxEAAwEAAAAAAAAAAAAAAAAAAhEgIf/aAAgBAgEBPwAnlf/EABYRAAMAAAAAAAAAAAAAAAAAAAIRIP/aAAgBAwEBPwAVX//Z",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        2784
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 45610
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 130411
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 281426
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 434582
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 718043
+          },
+          "2784": {
+            "width": 2784,
+            "height": 4176,
+            "bytes": 862396
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 42954
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 124668
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 299512
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 480140
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 827792
+          },
+          "2784": {
+            "width": 2784,
+            "height": 4176,
+            "bytes": 1010908
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 57451
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 161728
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 383470
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 662042
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 1322454
+          },
+          "2784": {
+            "width": 2784,
+            "height": 4176,
+            "bytes": 1684592
+          }
+        }
+      }
+    },
+    "baggy-solo.jpg": {
+      "file": "baggy-solo.jpg",
+      "base": "baggy-solo",
+      "width": 3896,
+      "height": 5455,
+      "aspectRatio": 0.7142,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAiABgDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAEDBAUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAPK3V7TCInpc2+s6UJAD/8QAHhAAAgIDAAMBAAAAAAAAAAAAAQIAAxAhMRESIEH/2gAIAQEAAT8AjVMtaWHjcwo8kS3dYBOhzC9EtvFlTIEAIGF0wisPY7/Ien4//8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwBf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwBf/9k=",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        3896
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 12158
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 32368
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 75723
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 159378
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 408472
+          },
+          "3896": {
+            "width": 3896,
+            "height": 5455,
+            "bytes": 1018819
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 12812
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 33428
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 76272
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 155596
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 399998
+          },
+          "3896": {
+            "width": 3896,
+            "height": 5455,
+            "bytes": 1115248
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 23799
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 60827
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 132673
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 243461
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 589499
+          },
+          "3896": {
+            "width": 3896,
+            "height": 5455,
+            "bytes": 1615034
+          }
+        }
+      }
+    },
+    "beach-solo-white-bg.jpg": {
+      "file": "beach-solo-white-bg.jpg",
+      "base": "beach-solo-white-bg",
+      "width": 3949,
+      "height": 5528,
+      "aspectRatio": 0.7144,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAiABgDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAMBAgQG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhADEAAAAPWSpzj0tSZlWA2CBQV//8QAIRAAAQEHBQAAAAAAAAAAAAAAAQMCEBESISIxABMgQUL/2gAIAQEAAT8A0kupvKMli0YL2RdNV8wiK9wfLbj1Hj//xAAWEQADAAAAAAAAAAAAAAAAAAABECD/2gAIAQIBAT8ARj//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AF//2Q==",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        3949
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 10315
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 23665
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 45051
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 73354
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 139870
+          },
+          "3949": {
+            "width": 3949,
+            "height": 5528,
+            "bytes": 276308
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 10948
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 26768
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 50350
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 81272
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 152576
+          },
+          "3949": {
+            "width": 3949,
+            "height": 5528,
+            "bytes": 312406
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 16932
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 41716
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 82473
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 137684
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 272395
+          },
+          "3949": {
+            "width": 3949,
+            "height": 5528,
+            "bytes": 613243
+          }
+        }
+      }
+    },
+    "black-and-white-baggy-reverse.jpg": {
+      "file": "black-and-white-baggy-reverse.jpg",
+      "base": "black-and-white-baggy-reverse",
+      "width": 2784,
+      "height": 4176,
+      "aspectRatio": 0.6667,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAkABgDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAQFAQIGA//EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAObmx7UpW436DnpxXsjMgPAH/8QAIRAAAgIBBAIDAAAAAAAAAAAAAQIAAxEEEiFBE3EUM2H/2gAIAQEAAT8AAj6cDSJb2WmJSu6wQrlcdQjBMpOLF9xxpvE208gQynlxEbFtmexHG1mEp4cRSfkY/Jb9je5//8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwBf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwBf/9k=",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        2784
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 17118
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 40154
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 74512
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 108453
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 178575
+          },
+          "2784": {
+            "width": 2784,
+            "height": 4176,
+            "bytes": 209732
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 18190
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 42610
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 79198
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 120592
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 216840
+          },
+          "2784": {
+            "width": 2784,
+            "height": 4176,
+            "bytes": 276348
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 32707
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 79657
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 161488
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 264701
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 540685
+          },
+          "2784": {
+            "width": 2784,
+            "height": 4176,
+            "bytes": 704691
+          }
+        }
+      }
+    },
+    "black-and-white-lineup.jpg": {
+      "file": "black-and-white-lineup.jpg",
+      "base": "black-and-white-lineup",
+      "width": 4000,
+      "height": 5600,
+      "aspectRatio": 0.7143,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAiABgDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAEEAgMFBv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAPNXK3SOQ3CMtYJFnIKwP//EAB4QAQEAAgIDAQEAAAAAAAAAAAECAAMRIQQxQROB/9oACAEBAAE/ANMTeyJpQXvL8Lfq2bSTknsX6ZZ2jzzmi4iloXrJ8idmuYBlF+5XNNyvYrgyk8e+XCyLmk5B9Y1+m3nJETrK5cmmZZzT6/uWGOf/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AF//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AF//2Q==",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        4000
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 26967
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 61144
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 123894
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 206112
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 452975
+          },
+          "4000": {
+            "width": 4000,
+            "height": 5600,
+            "bytes": 1260130
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 27890
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 65372
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 132672
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 225218
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 502626
+          },
+          "4000": {
+            "width": 4000,
+            "height": 5600,
+            "bytes": 1427532
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 41255
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 99053
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 206195
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 355790
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 794658
+          },
+          "4000": {
+            "width": 4000,
+            "height": 5600,
+            "bytes": 2328079
+          }
+        }
+      }
+    },
+    "black-solo-white-bg-side.jpg": {
+      "file": "black-solo-white-bg-side.jpg",
+      "base": "black-solo-white-bg-side",
+      "width": 4000,
+      "height": 5600,
+      "aspectRatio": 0.7143,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAiABgDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAEFBgQC/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAA1nJ1Zw0iApbqiL1AnyEg/8QAIBAAAQQCAQUAAAAAAAAAAAAAAQIEEBEDBSIAEiNBYv/aAAgBAQABPwDpvmWvNm8gPaaoep1ayl+7RLEYw/d8eVyztGydfRmhd1H/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AF//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AF//2Q==",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        4000
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 5368
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 10344
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 20327
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 36625
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 112689
+          },
+          "4000": {
+            "width": 4000,
+            "height": 5600,
+            "bytes": 334895
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 5970
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 12632
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 25562
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 47376
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 124722
+          },
+          "4000": {
+            "width": 4000,
+            "height": 5600,
+            "bytes": 369978
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 11673
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 25446
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 51163
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 88195
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 205933
+          },
+          "4000": {
+            "width": 4000,
+            "height": 5600,
+            "bytes": 612722
+          }
+        }
+      }
+    },
+    "black-solo-white-bg.jpg": {
+      "file": "black-solo-white-bg.jpg",
+      "base": "black-solo-white-bg",
+      "width": 3874,
+      "height": 5423,
+      "aspectRatio": 0.7144,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAiABgDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAIGAQQHA//EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAALZp7POzo7zEqXdayWUGYBIH/8QAIxAAAQMEAQQDAAAAAAAAAAAAAQACEQMQEhMEFCJRUmFidP/aAAgBAQABPwBbiOVG5uPraoYY8/BWTtmUmcpVMzTYfqEQCCE6gBzyI7N2KAgAWqUH9W/9Lb4jwLf/xAAVEQEBAAAAAAAAAAAAAAAAAAARIP/aAAgBAgEBPwAr/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwBf/9k=",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        3874
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 7214
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 14225
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 27255
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 50196
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 157102
+          },
+          "3874": {
+            "width": 3874,
+            "height": 5423,
+            "bytes": 420576
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 7766
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 16910
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 33380
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 63378
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 175142
+          },
+          "3874": {
+            "width": 3874,
+            "height": 5423,
+            "bytes": 453094
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 15603
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 34873
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 69511
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 121181
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 288524
+          },
+          "3874": {
+            "width": 3874,
+            "height": 5423,
+            "bytes": 796022
+          }
+        }
+      }
+    },
+    "cow-runway-walk.jpeg": {
+      "file": "cow-runway-walk.jpeg",
+      "base": "cow-runway-walk",
+      "width": 5184,
+      "height": 3456,
+      "aspectRatio": 1.5,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAQABgDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBP/EABUBAQEAAAAAAAAAAAAAAAAAAAMB/9oADAMBAAIQAxAAAABwbiWFo3//xAAgEAACAgIBBQEAAAAAAAAAAAABAgADBBITERQhMTJS/9oACAEBAAE/AL+e01GpR5I2luHldzYOWU41y7o5BUfMLZOoFQOpEqXJUIX/AF1ltzrc529if//EABgRAAMBAQAAAAAAAAAAAAAAAAABEgJR/9oACAECAQE/AMqUOun/xAAZEQACAwEAAAAAAAAAAAAAAAAAAQIDIRH/2gAIAQMBAT8Aesi6+bBs/9k=",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        5184
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 320,
+            "bytes": 21979
+          },
+          "800": {
+            "width": 800,
+            "height": 533,
+            "bytes": 42903
+          },
+          "1200": {
+            "width": 1200,
+            "height": 800,
+            "bytes": 72736
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1067,
+            "bytes": 102433
+          },
+          "2400": {
+            "width": 2400,
+            "height": 1600,
+            "bytes": 174733
+          },
+          "5184": {
+            "width": 5184,
+            "height": 3456,
+            "bytes": 525726
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 320,
+            "bytes": 21128
+          },
+          "800": {
+            "width": 800,
+            "height": 533,
+            "bytes": 43468
+          },
+          "1200": {
+            "width": 1200,
+            "height": 800,
+            "bytes": 75712
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1067,
+            "bytes": 110008
+          },
+          "2400": {
+            "width": 2400,
+            "height": 1600,
+            "bytes": 193100
+          },
+          "5184": {
+            "width": 5184,
+            "height": 3456,
+            "bytes": 615804
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 320,
+            "bytes": 31857
+          },
+          "800": {
+            "width": 800,
+            "height": 533,
+            "bytes": 71544
+          },
+          "1200": {
+            "width": 1200,
+            "height": 800,
+            "bytes": 136247
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1067,
+            "bytes": 213687
+          },
+          "2400": {
+            "width": 2400,
+            "height": 1600,
+            "bytes": 417683
+          },
+          "5184": {
+            "width": 5184,
+            "height": 3456,
+            "bytes": 1536162
+          }
+        }
+      }
+    },
+    "dark-baggy-group-photo.jpeg": {
+      "file": "dark-baggy-group-photo.jpeg",
+      "base": "dark-baggy-group-photo",
+      "width": 2000,
+      "height": 1500,
+      "aspectRatio": 1.3333,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAASABgDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAIEBQMG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAANGh1xz0qoIWSIg//8QAIBAAAgICAgIDAAAAAAAAAAAAAQIAAwQREzEFISJRYf/aAAgBAQABPwCy0UUs30IPK6T91Me4246M3cyb1FDbHc4w1XITrcwtpjrsxgDWNgH2IFX18R1GACaE/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwAf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwAf/9k=",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2000
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 360,
+            "bytes": 8060
+          },
+          "800": {
+            "width": 800,
+            "height": 600,
+            "bytes": 14373
+          },
+          "1200": {
+            "width": 1200,
+            "height": 900,
+            "bytes": 23168
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1200,
+            "bytes": 33442
+          },
+          "2000": {
+            "width": 2000,
+            "height": 1500,
+            "bytes": 48667
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 360,
+            "bytes": 8332
+          },
+          "800": {
+            "width": 800,
+            "height": 600,
+            "bytes": 15810
+          },
+          "1200": {
+            "width": 1200,
+            "height": 900,
+            "bytes": 26934
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1200,
+            "bytes": 41268
+          },
+          "2000": {
+            "width": 2000,
+            "height": 1500,
+            "bytes": 58222
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 360,
+            "bytes": 16915
+          },
+          "800": {
+            "width": 800,
+            "height": 600,
+            "bytes": 36677
+          },
+          "1200": {
+            "width": 1200,
+            "height": 900,
+            "bytes": 70685
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1200,
+            "bytes": 115890
+          },
+          "2000": {
+            "width": 2000,
+            "height": 1500,
+            "bytes": 177503
+          }
+        }
+      }
+    },
+    "dark-baggy-runway-walk.JPG": {
+      "file": "dark-baggy-runway-walk.JPG",
+      "base": "dark-baggy-runway-walk",
+      "width": 2535,
+      "height": 3975,
+      "aspectRatio": 0.6377,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAmABgDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAIDAQb/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAA8nvjSwEqs6JBtwlBf//EACAQAAIBAwQDAAAAAAAAAAAAAAECABAREgMTMUEhI1H/2gAIAQEAAT8AiaWWmz/KCZNYgHxRLZDLiMqjg1ai7XYaesm9jBtdqZ//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AF//xAAVEQEBAAAAAAAAAAAAAAAAAAABIP/aAAgBAwEBPwAr/9k=",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        2535
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 753,
+            "bytes": 7848
+          },
+          "800": {
+            "width": 800,
+            "height": 1255,
+            "bytes": 14282
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1882,
+            "bytes": 23096
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2509,
+            "bytes": 32597
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3763,
+            "bytes": 57376
+          },
+          "2535": {
+            "width": 2535,
+            "height": 3975,
+            "bytes": 63567
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 753,
+            "bytes": 8612
+          },
+          "800": {
+            "width": 800,
+            "height": 1255,
+            "bytes": 17454
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1882,
+            "bytes": 30302
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2509,
+            "bytes": 46712
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3763,
+            "bytes": 88880
+          },
+          "2535": {
+            "width": 2535,
+            "height": 3975,
+            "bytes": 99642
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 753,
+            "bytes": 18570
+          },
+          "800": {
+            "width": 800,
+            "height": 1255,
+            "bytes": 40599
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1882,
+            "bytes": 79648
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2509,
+            "bytes": 133967
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3763,
+            "bytes": 290261
+          },
+          "2535": {
+            "width": 2535,
+            "height": 3975,
+            "bytes": 330361
+          }
+        }
+      }
+    },
+    "dark-baggy-solo-white-bg.jpg": {
+      "file": "dark-baggy-solo-white-bg.jpg",
+      "base": "dark-baggy-solo-white-bg",
+      "width": 4000,
+      "height": 5600,
+      "aspectRatio": 0.7143,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAiABgDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAYBAgQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAKznSpZMDWc96fqnEAAf/8QAIhAAAQMCBgMAAAAAAAAAAAAAAgEDBAASBRAREyIxIFJi/9oACAEBAAE/AK3DV9LTGzKWahHdJPWot+8zyXW9MjtQCu60piSCyA4CiKeUoCOO6I9qNMYc+SMuffj/AP/EABURAQEAAAAAAAAAAAAAAAAAABEg/9oACAECAQE/ABr/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AF//2Q==",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        4000
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 11514
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 30839
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 77549
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 162447
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 421779
+          },
+          "4000": {
+            "width": 4000,
+            "height": 5600,
+            "bytes": 1039924
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 12170
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 30018
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 73448
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 150892
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 414972
+          },
+          "4000": {
+            "width": 4000,
+            "height": 5600,
+            "bytes": 1247458
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 672,
+            "bytes": 20397
+          },
+          "800": {
+            "width": 800,
+            "height": 1120,
+            "bytes": 49554
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1680,
+            "bytes": 110284
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2240,
+            "bytes": 206491
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3360,
+            "bytes": 512296
+          },
+          "4000": {
+            "width": 4000,
+            "height": 5600,
+            "bytes": 1502189
+          }
+        }
+      }
+    },
+    "dark-baggy-solo.jpg": {
+      "file": "dark-baggy-solo.jpg",
+      "base": "dark-baggy-solo",
+      "width": 2784,
+      "height": 4176,
+      "aspectRatio": 0.6667,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAkABgDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAIFAQMGBP/EABYBAQEBAAAAAAAAAAAAAAAAAAACAf/aAAwDAQACEAMQAAAA5jZi4tSpCd/zvQ0oWEo+w1oGv//EACMQAAICAQMDBQAAAAAAAAAAAAERAAIDEhMyBAUiFDFRcYL/2gAIAQEAAT8AU276Na8YpUMgCGo9DXAvLU3CESJhW5VyuHKcYtoKUyrcuvmU5V+5XuNydpDjMr3Lv3cxcxKFZfzOo5uf/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAQEf/aAAgBAgEBPwDjgzjf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwBf/9k=",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        2784
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 19742
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 49304
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 101499
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 163157
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 293888
+          },
+          "2784": {
+            "width": 2784,
+            "height": 4176,
+            "bytes": 361785
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 20060
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 46926
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 94408
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 148260
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 274570
+          },
+          "2784": {
+            "width": 2784,
+            "height": 4176,
+            "bytes": 349528
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 34711
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 87429
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 186470
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 321013
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 686323
+          },
+          "2784": {
+            "width": 2784,
+            "height": 4176,
+            "bytes": 910067
+          }
+        }
+      }
+    },
+    "dark-runway-low-angle.JPG": {
+      "file": "dark-runway-low-angle.JPG",
+      "base": "dark-runway-low-angle",
+      "width": 5184,
+      "height": 3456,
+      "aspectRatio": 1.5,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAkABgDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAMBBAUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAPJ5ztEXeS8CklmwgJAA/8QAHxAAAgICAQUAAAAAAAAAAAAAAQIAEQNREgQgISMx/9oACAEBAAE/AIBFxkxF5NUXEC4EXpcONk9im5i8OLhbR+QZSFBuclu6lrqWmj2f/8QAFhEAAwAAAAAAAAAAAAAAAAAAABEg/9oACAECAQE/ABz/AP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8AX//Z",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        5184
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 11632
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 23876
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 41614
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 60650
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 115111
+          },
+          "3456": {
+            "width": 3456,
+            "height": 5184,
+            "bytes": 220809
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 11994
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 26236
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 49720
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 75884
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 152952
+          },
+          "3456": {
+            "width": 3456,
+            "height": 5184,
+            "bytes": 298928
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 23903
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 54744
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 112476
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 194454
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 442601
+          },
+          "3456": {
+            "width": 3456,
+            "height": 5184,
+            "bytes": 898023
+          }
+        }
+      }
+    },
+    "light-cropped-runwyay-pose.jpg": {
+      "file": "light-cropped-runwyay-pose.jpg",
+      "base": "light-cropped-runwyay-pose",
+      "width": 1365,
+      "height": 2048,
+      "aspectRatio": 0.6665,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAkABgDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAQCAwUG/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAADy6rMiUJba5ulHMay9rI1mQH//xAAfEAACAgIDAAMAAAAAAAAAAAABAgAEAxESITEQE3H/2gAIAQEAAT8A+UrFx1FqEnvyZa7p2QQD5M+RK7MigyjqwrFgQAZd2rcPQsNTJY0zkiVa7V8QXe9tLZb7MgKH0wQDojkZc6rP+T//xAAZEQEBAAMBAAAAAAAAAAAAAAABABARQUL/2gAIAQIBAT8AhG8m4AuY/8QAGREAAgMBAAAAAAAAAAAAAAAAAAEQERIx/9oACAEDAQE/ACmLppz/AP/Z",
+      "widths": [
+        480,
+        800,
+        1200,
+        1365
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 11995
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 21807
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 35529
+          },
+          "1365": {
+            "width": 1365,
+            "height": 2048,
+            "bytes": 43910
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 13024
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 25774
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 44814
+          },
+          "1365": {
+            "width": 1365,
+            "height": 2048,
+            "bytes": 55212
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 27139
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 58341
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 110493
+          },
+          "1365": {
+            "width": 1365,
+            "height": 2048,
+            "bytes": 138670
+          }
+        }
+      }
+    },
+    "low-angle-runway-walk-crop-top.JPG": {
+      "file": "low-angle-runway-walk-crop-top.JPG",
+      "base": "low-angle-runway-walk-crop-top",
+      "width": 5184,
+      "height": 3456,
+      "aspectRatio": 1.5,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAkABgDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAEEAgMFBv/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAA8vnGyatJFK/zdi9FTTNEagH/xAAhEAACAgAFBQAAAAAAAAAAAAABAgADBBESMUEFICIjUv/aAAgBAQABPwCDKUiMvjnKK9Skw0GtB8mXHYCdPPreYxWtqGniM6sJReKwwPMOKOg5b9n/xAAYEQADAQEAAAAAAAAAAAAAAAABEBEAIf/aAAgBAgEBPwBTmAgf/8QAGREAAgMBAAAAAAAAAAAAAAAAAREAAhAS/9oACAEDAQE/AEXnTs4d/9k=",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        5184
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 7325
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 14364
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 26486
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 47109
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 133843
+          },
+          "3456": {
+            "width": 3456,
+            "height": 5184,
+            "bytes": 314151
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 8514
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 18134
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 37098
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 69844
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 181366
+          },
+          "3456": {
+            "width": 3456,
+            "height": 5184,
+            "bytes": 381320
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 20936
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 49732
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 112164
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 209805
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 518931
+          },
+          "3456": {
+            "width": 3456,
+            "height": 5184,
+            "bytes": 1089029
+          }
+        }
+      }
+    },
+    "low-angle-runway-walk-crop-top2.JPG": {
+      "file": "low-angle-runway-walk-crop-top2.JPG",
+      "base": "low-angle-runway-walk-crop-top2",
+      "width": 5184,
+      "height": 3456,
+      "aspectRatio": 1.5,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAkABgDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAQBAwUCBv/EABcBAQEBAQAAAAAAAAAAAAAAAAIAAwH/2gAMAwEAAhADEAAAAPOV8uFLlpS+3jvcV4iZlGQ3MAV//8QAHxAAAgICAgMBAAAAAAAAAAAAAQIAAxEhBBIQEzFy/9oACAEBAAE/ALSOxAgBOcCKNwblCZVjGR/YVRCZWM6nDwlR/U4doHJdpSepzFtb0OQdhswWKtnZT934yfH/xAAbEQACAgMBAAAAAAAAAAAAAAAAAQIRAxASMf/aAAgBAgEBPwDxFokTx9O9/wD/xAAaEQACAgMAAAAAAAAAAAAAAAABAgAQETJi/9oACAEDAQE/ANjSlQvUzf8A/9k=",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        5184
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 8601
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 17149
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 31462
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 50879
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 130402
+          },
+          "3456": {
+            "width": 3456,
+            "height": 5184,
+            "bytes": 309942
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 10150
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 21418
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 41864
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 74586
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 173924
+          },
+          "3456": {
+            "width": 3456,
+            "height": 5184,
+            "bytes": 379926
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 23384
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 55517
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 123159
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 226752
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 548694
+          },
+          "3456": {
+            "width": 3456,
+            "height": 5184,
+            "bytes": 1140690
+          }
+        }
+      }
+    },
+    "low-angle-runway-walk-cropped-lights.JPG": {
+      "file": "low-angle-runway-walk-cropped-lights.JPG",
+      "base": "low-angle-runway-walk-cropped-lights",
+      "width": 5184,
+      "height": 3456,
+      "aspectRatio": 1.5,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAkABgDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAMEAgUGAf/EABcBAAMBAAAAAAAAAAAAAAAAAAECAwD/2gAMAwEAAhADEAAAAOYuR9LKuqbkp5OavjRJlcRiGXwbf//EAB8QAAEFAAEFAAAAAAAAAAAAAAIAAQMEESISEyBBYf/aAAgBAQABPwAB1NXdQUilfGZV/arzUxhwx5KtarRqvrniOQhfF33URdCLkTpx++H/xAAZEQADAQEBAAAAAAAAAAAAAAAAAQIREBL/2gAIAQIBAT8AummejNoxd//EABkRAAMBAQEAAAAAAAAAAAAAAAACEQEQEv/aAAgBAwEBPwBVyHksUu9//9k=",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        5184
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 9206
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 17839
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 31203
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 47001
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 99840
+          },
+          "3456": {
+            "width": 3456,
+            "height": 5184,
+            "bytes": 234867
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 10644
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 22066
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 39958
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 66324
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 150574
+          },
+          "3456": {
+            "width": 3456,
+            "height": 5184,
+            "bytes": 313982
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 24213
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 55187
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 115543
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 206857
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 496046
+          },
+          "3456": {
+            "width": 3456,
+            "height": 5184,
+            "bytes": 1025189
+          }
+        }
+      }
+    },
+    "pjamas-runway-walk.jpeg": {
+      "file": "pjamas-runway-walk.jpeg",
+      "base": "pjamas-runway-walk",
+      "width": 5184,
+      "height": 3456,
+      "aspectRatio": 1.5,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAQABgDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCAwQG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhADEAAAAOZm6XDlLhv/xAAfEAACAgEEAwAAAAAAAAAAAAABAgADBAUREyEkMmL/2gAIAQEAAT8ASomxUI27ho8ji+pk0im0oDNSVGzENIhptGRybj2lyFryznomf//EABoRAAICAwAAAAAAAAAAAAAAAAACESEBMUH/2gAIAQIBAT8AamieC4rZ/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAIBMREhQf/aAAgBAwEBPwBdrE46NdH/2Q==",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        5184
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 320,
+            "bytes": 10128
+          },
+          "800": {
+            "width": 800,
+            "height": 533,
+            "bytes": 21815
+          },
+          "1200": {
+            "width": 1200,
+            "height": 800,
+            "bytes": 40327
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1067,
+            "bytes": 58593
+          },
+          "2400": {
+            "width": 2400,
+            "height": 1600,
+            "bytes": 102947
+          },
+          "5184": {
+            "width": 5184,
+            "height": 3456,
+            "bytes": 276812
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 320,
+            "bytes": 10482
+          },
+          "800": {
+            "width": 800,
+            "height": 533,
+            "bytes": 25970
+          },
+          "1200": {
+            "width": 1200,
+            "height": 800,
+            "bytes": 50174
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1067,
+            "bytes": 77346
+          },
+          "2400": {
+            "width": 2400,
+            "height": 1600,
+            "bytes": 142660
+          },
+          "5184": {
+            "width": 5184,
+            "height": 3456,
+            "bytes": 419528
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 320,
+            "bytes": 18045
+          },
+          "800": {
+            "width": 800,
+            "height": 533,
+            "bytes": 42983
+          },
+          "1200": {
+            "width": 1200,
+            "height": 800,
+            "bytes": 86073
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1067,
+            "bytes": 138609
+          },
+          "2400": {
+            "width": 2400,
+            "height": 1600,
+            "bytes": 274950
+          },
+          "5184": {
+            "width": 5184,
+            "height": 3456,
+            "bytes": 1011029
+          }
+        }
+      }
+    },
+    "runway-low-angle-cow.JPG": {
+      "file": "runway-low-angle-cow.JPG",
+      "base": "runway-low-angle-cow",
+      "width": 5184,
+      "height": 3456,
+      "aspectRatio": 1.5,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAkABgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFBgH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAMn3j0pFIKboM/UN0BMiPVBy4AP/xAAhEAACAgEEAgMAAAAAAAAAAAABAgADBAUREjEQIVKBof/aAAgBAQABPwCAFiAB7hBB2PjAoN1497cZn4y1uSn3B3NMrrGyt27TUuCcqlMHcwbWbJr36AMvreyt29k7n8gmmopstPxqMZimHZse+U//xAAYEQEBAAMAAAAAAAAAAAAAAAAAAQIQMf/aAAgBAgEBPwBKyTmo/8QAGhEBAAIDAQAAAAAAAAAAAAAAAQARAgMhUf/aAAgBAwEBPwALQiUpNbiX7ypn1hGf/9k=",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        5184
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 20614
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 38940
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 64286
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 92898
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 161039
+          },
+          "3456": {
+            "width": 3456,
+            "height": 5184,
+            "bytes": 278965
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 20666
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 41194
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 71774
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 106138
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 205614
+          },
+          "3456": {
+            "width": 3456,
+            "height": 5184,
+            "bytes": 352834
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 33973
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 75273
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 144576
+          },
+          "1600": {
+            "width": 1600,
+            "height": 2400,
+            "bytes": 233593
+          },
+          "2400": {
+            "width": 2400,
+            "height": 3600,
+            "bytes": 482758
+          },
+          "3456": {
+            "width": 3456,
+            "height": 5184,
+            "bytes": 930917
+          }
+        }
+      }
+    },
+    "runway-pose-beach.jpeg": {
+      "file": "runway-pose-beach.jpeg",
+      "base": "runway-pose-beach",
+      "width": 2976,
+      "height": 1984,
+      "aspectRatio": 1.5,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAQABgDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQFBv/EABUBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAADBU3CnPqiH/8QAHRAAAgICAwEAAAAAAAAAAAAAAgMBEgAEERMxMv/aAAgBAQABPwBet2L2GW+cXombhVz6Fserpaa+ea5ro2KsHwT9yEGDeyGTalcdKwNkSVpnP//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/AKf/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwCI/9k=",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        2976
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 320,
+            "bytes": 13002
+          },
+          "800": {
+            "width": 800,
+            "height": 533,
+            "bytes": 27289
+          },
+          "1200": {
+            "width": 1200,
+            "height": 800,
+            "bytes": 51901
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1067,
+            "bytes": 80731
+          },
+          "2400": {
+            "width": 2400,
+            "height": 1600,
+            "bytes": 145099
+          },
+          "2976": {
+            "width": 2976,
+            "height": 1984,
+            "bytes": 216661
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 320,
+            "bytes": 12662
+          },
+          "800": {
+            "width": 800,
+            "height": 533,
+            "bytes": 28610
+          },
+          "1200": {
+            "width": 1200,
+            "height": 800,
+            "bytes": 56940
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1067,
+            "bytes": 92020
+          },
+          "2400": {
+            "width": 2400,
+            "height": 1600,
+            "bytes": 167714
+          },
+          "2976": {
+            "width": 2976,
+            "height": 1984,
+            "bytes": 239702
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 320,
+            "bytes": 21701
+          },
+          "800": {
+            "width": 800,
+            "height": 533,
+            "bytes": 49385
+          },
+          "1200": {
+            "width": 1200,
+            "height": 800,
+            "bytes": 96886
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1067,
+            "bytes": 158036
+          },
+          "2400": {
+            "width": 2400,
+            "height": 1600,
+            "bytes": 309714
+          },
+          "2976": {
+            "width": 2976,
+            "height": 1984,
+            "bytes": 474942
+          }
+        }
+      }
+    },
+    "runway-walk-group-photo-light.JPG": {
+      "file": "runway-walk-group-photo-light.JPG",
+      "base": "runway-walk-group-photo-light",
+      "width": 2048,
+      "height": 1365,
+      "aspectRatio": 1.5004,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAQABgDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCBQb/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/9oADAMBAAIQAxAAAADNuI2YsmQEP//EAB4QAAICAgIDAAAAAAAAAAAAAAECAAMEERMxBRUh/9oACAEBAAE/AKMZ77AikRPE5JI2VUTJwbcVwH1o9MJU/GwYdiewS0o1u9gEfJkX8hChiVHU/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEQMiMf/aAAgBAgEBPwCbyJ68I20rP//EABcRAAMBAAAAAAAAAAAAAAAAAAECEQD/2gAIAQMBAT8AVUMpmMB3/9k=",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2048
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 320,
+            "bytes": 12447
+          },
+          "800": {
+            "width": 800,
+            "height": 533,
+            "bytes": 22118
+          },
+          "1200": {
+            "width": 1200,
+            "height": 800,
+            "bytes": 34531
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1066,
+            "bytes": 46726
+          },
+          "2048": {
+            "width": 2048,
+            "height": 1365,
+            "bytes": 62039
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 320,
+            "bytes": 11870
+          },
+          "800": {
+            "width": 800,
+            "height": 533,
+            "bytes": 23306
+          },
+          "1200": {
+            "width": 1200,
+            "height": 800,
+            "bytes": 38702
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1066,
+            "bytes": 55122
+          },
+          "2048": {
+            "width": 2048,
+            "height": 1365,
+            "bytes": 75966
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 320,
+            "bytes": 21012
+          },
+          "800": {
+            "width": 800,
+            "height": 533,
+            "bytes": 44920
+          },
+          "1200": {
+            "width": 1200,
+            "height": 800,
+            "bytes": 80393
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1066,
+            "bytes": 122268
+          },
+          "2048": {
+            "width": 2048,
+            "height": 1365,
+            "bytes": 176146
+          }
+        }
+      }
+    },
+    "white-runway-walk.jpeg": {
+      "file": "white-runway-walk.jpeg",
+      "base": "white-runway-walk",
+      "width": 5184,
+      "height": 3456,
+      "aspectRatio": 1.5,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAQABgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgP/xAAWAQEBAQAAAAAAAAAAAAAAAAADAAH/2gAMAwEAAhADEAAAAE+ilYkkmjb/xAAgEAABBAIBBQAAAAAAAAAAAAADAAECERITBCEiI0FR/9oACAEBAAE/ABCHAES5PftkdyDFue8JPTIrz1bYWyA5CQxjG/i40mlAYpxurfquWfxEE+Ldy//EABcRAQEBAQAAAAAAAAAAAAAAAAEAETH/2gAIAQIBAT8AyAehf//EABkRAAMAAwAAAAAAAAAAAAAAAAABEQISMf/aAAgBAwEBPwAycmrfD//Z",
+      "widths": [
+        480,
+        800,
+        1200,
+        1600,
+        2400,
+        5184
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 320,
+            "bytes": 14873
+          },
+          "800": {
+            "width": 800,
+            "height": 533,
+            "bytes": 28499
+          },
+          "1200": {
+            "width": 1200,
+            "height": 800,
+            "bytes": 46969
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1067,
+            "bytes": 65740
+          },
+          "2400": {
+            "width": 2400,
+            "height": 1600,
+            "bytes": 108972
+          },
+          "5184": {
+            "width": 5184,
+            "height": 3456,
+            "bytes": 373483
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 320,
+            "bytes": 15058
+          },
+          "800": {
+            "width": 800,
+            "height": 533,
+            "bytes": 30660
+          },
+          "1200": {
+            "width": 1200,
+            "height": 800,
+            "bytes": 52132
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1067,
+            "bytes": 73814
+          },
+          "2400": {
+            "width": 2400,
+            "height": 1600,
+            "bytes": 130450
+          },
+          "5184": {
+            "width": 5184,
+            "height": 3456,
+            "bytes": 469860
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 320,
+            "bytes": 25783
+          },
+          "800": {
+            "width": 800,
+            "height": 533,
+            "bytes": 57564
+          },
+          "1200": {
+            "width": 1200,
+            "height": 800,
+            "bytes": 107591
+          },
+          "1600": {
+            "width": 1600,
+            "height": 1067,
+            "bytes": 169736
+          },
+          "2400": {
+            "width": 2400,
+            "height": 1600,
+            "bytes": 333194
+          },
+          "5184": {
+            "width": 5184,
+            "height": 3456,
+            "bytes": 1320246
+          }
+        }
+      }
+    },
+    "white-shirt-runway-pose.jpg": {
+      "file": "white-shirt-runway-pose.jpg",
+      "base": "white-shirt-runway-pose",
+      "width": 1365,
+      "height": 2048,
+      "aspectRatio": 0.6665,
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////2wBDARcXFxcYFxocHBokJiImJDUwLCwwNVA5PTk9OVB5S1hLS1hLeWuBaWJpgWvAl4WFl8DeurC63v/w8P//////////wgARCAAkABgDASIAAhEBAxEB/8QAGQABAQEBAQEAAAAAAAAAAAAAAAUEAwIG/8QAFwEBAQEBAAAAAAAAAAAAAAAAAQADAv/aAAwDAQACEAMQAAAA+XUuwx3dGy5I0nWNiZ1/0akoJ//EACEQAAICAgIBBQAAAAAAAAAAAAECAAMEIQUREhAiMUJR/9oACAEBAAE/APV8dRtTK+Oe2s2RqSNxeyABuUsVxh2PrMexPN1cxagKifgL1Lb8gIiog2ksR1Y+Y6JEFp/BDYde1dCci5YJP//EABoRAAICAwAAAAAAAAAAAAAAAAABERICAxD/2gAIAQIBAT8AsShGWqzmzXf/xAAYEQADAQEAAAAAAAAAAAAAAAABEBEAIf/aAAgBAwEBPwCIng1f/9k=",
+      "widths": [
+        480,
+        800,
+        1200,
+        1365
+      ],
+      "variants": {
+        "avif": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 18797
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 34530
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 54556
+          },
+          "1365": {
+            "width": 1365,
+            "height": 2048,
+            "bytes": 64252
+          }
+        },
+        "webp": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 19492
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 37746
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 63258
+          },
+          "1365": {
+            "width": 1365,
+            "height": 2048,
+            "bytes": 75794
+          }
+        },
+        "jpg": {
+          "480": {
+            "width": 480,
+            "height": 720,
+            "bytes": 36917
+          },
+          "800": {
+            "width": 800,
+            "height": 1200,
+            "bytes": 80277
+          },
+          "1200": {
+            "width": 1200,
+            "height": 1800,
+            "bytes": 150394
+          },
+          "1365": {
+            "width": 1365,
+            "height": 2048,
+            "bytes": 186573
+          }
+        }
+      }
+    }
+  }
+}

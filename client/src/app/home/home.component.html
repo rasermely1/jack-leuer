@@ -1,8 +1,14 @@
-<div
+<app-gallery-image
   class="backdrop"
-  [style.background-image]="'url(/gallery/' + profile.heroFile + ')'"
+  [file]="profile.heroFile"
+  alt=""
+  sizes="100vw"
+  layout="tile"
+  fetchPriority="high"
+  loading="eager"
+  [showLqip]="false"
   aria-hidden="true"
-></div>
+/>
 <div class="backdrop__veil" aria-hidden="true"></div>
 
 <header class="nav">
@@ -61,7 +67,7 @@
   </section>
 
   <div id="work" class="work">
-    @for (group of groups; track trackCategory($index, group)) {
+    @for (group of groups; track group.id) {
       <section class="series" [attr.aria-labelledby]="'series-' + group.id">
         <header class="series__header">
           <p class="series__count">{{ group.photos.length }} photos</p>
@@ -83,11 +89,10 @@
                 [attr.aria-label]="'Open ' + p.alt + ' in gallery'"
                 (click)="openViewer(indexOf(p), 'single')"
               >
-                <img
-                  [src]="'/gallery/' + p.file"
+                <app-gallery-image
+                  [file]="p.file"
                   [alt]="p.alt"
-                  loading="lazy"
-                  decoding="async"
+                  sizes="(max-width: 520px) 50vw, (max-width: 960px) 45vw, 30vw"
                 />
               </button>
             </figure>
