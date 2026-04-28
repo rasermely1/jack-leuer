@@ -110,7 +110,7 @@ export const PROFILE: Profile = {
 
 export const EVIL_PROFILE: Profile = {
   ...PROFILE,
-  heroFile: 'evilmode/background.jpeg',
+  heroFile: 'evilmode/backgound.jpeg',
   categories: [
     {
       id: 'portal',
@@ -137,9 +137,14 @@ export const EVIL_PROFILE: Profile = {
       label: 'Belly Bump / Cave Bellies / Birthday / EP / Amaze',
       blurb: 'Saga moments, group chapters, and finale energy.',
     },
+    {
+      id: 'archive',
+      label: 'Trash',
+      blurb: 'Trash archive: older backdrops and preserved lore artifacts.',
+    },
   ],
   photos: [
-    { file: 'evilmode/background.jpeg', alt: 'Background', category: 'portal' },
+    { file: 'evilmode/backgound.jpeg', alt: 'Trash', category: 'portal' },
     { file: 'evilmode/eve.png', alt: 'Eve', category: 'portal' },
     { file: 'evilmode/the-egg.jpeg', alt: 'The Egg', category: 'portal' },
     { file: 'evilmode/dababy.jpeg', alt: 'DaBaby', category: 'faces' },
@@ -156,5 +161,10 @@ export const EVIL_PROFILE: Profile = {
     { file: 'evilmode/our-first-ep.jpeg', alt: 'Our First EP', category: 'saga' },
     { file: 'evilmode/birthday.jpeg', alt: 'Birthday', category: 'saga' },
     { file: 'evilmode/amaze-amaze-amaze.jpeg', alt: 'Amaze Amaze Amaze', category: 'saga' },
+    { file: 'evilmode/the-can.jpeg', alt: 'The Can', category: 'saga' },
+    { file: 'evilmode/whallop.jpeg', alt: 'Whallop', category: 'saga' },
+    { file: 'evilmode/iowa-state-food.jpeg', alt: 'Iowa State Food', category: 'saga' },
+    { file: 'evilmode/sandy-mpreg.jpeg', alt: 'Sandy Mpreg', category: 'saga' },
+    { file: 'evilmode/background-old.jpeg', alt: 'Background (Old)', category: 'archive' },
   ],
 };
